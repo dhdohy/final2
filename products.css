@@ -225,19 +225,14 @@ body {
 .search-bar {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 30px auto;
-    width: 50%;
-    max-width: 600px;
 }
 
 .search-input {
-    width: 80%;
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #ddd;
-    border-right: none;
-    /* إزالة الحدود على اليمين */
+    border-right: none; /* إزالة الحدود على اليمين */
     border-radius: 25px 0 0 25px;
     background-color: #f9f9f9;
     transition: 0.3s ease;
@@ -300,10 +295,8 @@ body {
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px 24px;
-    /* زيادة حجم الزر */
-    font-size: 18px;
-    /* زيادة حجم النص */
+    padding: 16px 90px;   /* زيادة حجم الزر */
+    font-size: 22px;  /* زيادة حجم النص */
     border: none;
     cursor: pointer;
     border-radius: 8px;
@@ -326,7 +319,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #d4b5b5;
 }
 
 .dropdown:hover .dropdown-content {
