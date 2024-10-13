@@ -169,7 +169,7 @@
                 <a href="shopro.html?product-id=6" class="btn">المزيد</a>
         </div>
 
-        <div class="product-item" data-category="agriculture">
+        <div class="product-item" data-category="npk">
             <a href="shopro.html?product-id=7">
                 <img src="0\1 (7).jpg" alt="DELHAS RAW-SAF ">
                 <h3>DELHAS RAW-SAF </h3>
@@ -612,7 +612,7 @@
                 <a href="shopro.html?product-id=50" class="btn">المزيد</a>
         </div>
 
-        <div class="product-item" data-category="agriculture">
+        <div class="product-item" data-category="npk">
             <a href="shopro.html?product-id=51">
                 <img src="0/1 (51).jpg" alt="DELHAS AMINO NPK 8-10-5">
                 <h3> DELHAS AMINO NPK 8-10-5</h3>
@@ -718,7 +718,7 @@
             <a href="shopro.html?product-id=61">
                 <img src="0/1 (61).jpg" alt="DELHAS TURBA">
                 <h3> DELHAS TURBA</h3>
-                <h3>دلهاس توربا  </h3>
+                <h3>دلهاس توربا </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=61" class="btn">المزيد</a>
@@ -749,7 +749,7 @@
             <a href="shopro.html?product-id=64">
                 <img src="0/1 (64).jpg" alt="DELHAS COMBI GROWTH">
                 <h3> DELHAS COMBI GROWTH</h3>
-                <h3>دلهاس كومبي جروث  </h3>
+                <h3>دلهاس كومبي جروث </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=64" class="btn">المزيد</a>
@@ -801,7 +801,7 @@
             <a href="shopro.html?product-id=69">
                 <img src="0/1 (69).jpg" alt="DELHAS GIBBEST LIQUID">
                 <h3> DELHAS GIBBEST LIQUID</h3>
-                <h3>دلهاس جيبيست ليكويد  </h3>
+                <h3>دلهاس جيبيست ليكويد </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=69" class="btn">المزيد</a>
@@ -821,7 +821,7 @@
             <a href="shopro.html?product-id=71">
                 <img src="0/1 (71).jpg" alt="DELHAS BGD">
                 <h3> DELHAS BGD</h3>
-                <h3>دلهاس بي جي دي  </h3>
+                <h3>دلهاس بي جي دي </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=71" class="btn">المزيد</a>
@@ -851,7 +851,7 @@
             <a href="shopro.html?product-id=74">
                 <img src="0/1 (74).jpg" alt="DELHAS Roots Spectro">
                 <h3> DELHAS Roots Spectro</h3>
-                <h3>دلهاس روتس سبكترو  </h3>
+                <h3>دلهاس روتس سبكترو </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=74" class="btn">المزيد</a>
@@ -965,24 +965,18 @@
             <a href="shopro.html?product-id=85">
                 <img src="0/1 (85).jpg" alt="DELHAS SILICONE">
                 <h3> DELHAS SILICONE</h3>
-                <h3>دلهاس سيليكون  </h3>
+                <h3>دلهاس سيليكون </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
                 <p class="price"> </p>
                 <a href="shopro.html?product-id=85" class="btn">المزيد</a>
         </div>
-
-      
-
-       
-
-
     </div>
 
-    <!-- أزرار التنقل بين الصفحات -->
-    <div class="pagination">
-        <button class="next" onclick="nextPage()">الصفحة التالية</button>
-        <span id="page-number">1</span>
+    <!-- أزرار التنقل -->
+    <div class="navigation">
         <button class="prev" onclick="prevPage()">الصفحة السابقة</button>
+        <span id="page-number"></span>
+        <button class="next" onclick="nextPage()">الصفحة التالية</button>
     </div>
 
     </section>
@@ -1023,7 +1017,8 @@
         function filterByCategory(category) {
             var products = document.getElementsByClassName('product-item');
             for (var i = 0; i < products.length; i++) {
-                if (category === 'all' || products[i].getAttribute('data-category') === category) {
+                var categories = products[i].getAttribute('data-category').split(' ');
+                if (category === 'all' || categories.includes(category)) {
                     products[i].style.display = 'block';
                 } else {
                     products[i].style.display = 'none';
@@ -1051,17 +1046,35 @@
                 localStorage.setItem('productImage', imagePath);
             }
         }
+        const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
+        let currentPage = 1;
+        let currentCategory = 'all'; // الفئة الحالية
 
-        // تحديد عدد المنتجات في كل صفحة (5 صفوف × 4 منتجات لكل صف = 20 منتج في كل صفحة)
-        const productsPerPage = 5 * 4;
-        let currentPage = 1; // بدءًا من الصفحة الأولى
+        // دالة تصفية المنتجات حسب الفئة
+        function filterByCategory(category) {
+            currentCategory = category; // تحديث الفئة الحالية
+            currentPage = 1; // إعادة ضبط الصفحة الحالية
+            displayProducts(); // عرض المنتجات بعد التصفية
+        }
 
+        // دالة عرض المنتجات وتصفيتها حسب الفئة والصفحة
         function displayProducts() {
-            const products = document.querySelectorAll('.product-item'); // الحصول على جميع المنتجات
-            const totalPages = Math.ceil(products.length / productsPerPage); // حساب إجمالي عدد الصفحات
+            const products = document.querySelectorAll('.product-item');
+            let filteredProducts = [];
 
-            // إخفاء جميع المنتجات في البداية
+            // تصفية المنتجات حسب الفئة المختارة
             products.forEach((product) => {
+                if (currentCategory === 'all' || product.getAttribute('data-category') === currentCategory) {
+                    filteredProducts.push(product);
+                } else {
+                    product.style.display = 'none'; // إخفاء المنتجات التي لا تنتمي إلى الفئة
+                }
+            });
+
+            const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+
+            // إخفاء جميع المنتجات
+            filteredProducts.forEach((product) => {
                 product.style.display = 'none';
             });
 
@@ -1070,26 +1083,33 @@
             const end = start + productsPerPage;
 
             // عرض المنتجات في الصفحة الحالية فقط
-            for (let i = start; i < end && i < products.length; i++) {
-                products[i].style.display = 'block';
+            for (let i = start; i < end && i < filteredProducts.length; i++) {
+                filteredProducts[i].style.display = 'block';
             }
 
             // تحديث رقم الصفحة
             document.getElementById('page-number').textContent = `الصفحة ${currentPage} من ${totalPages}`;
 
-            // إخفاء أو إظهار أزرار التنقل بناءً على الصفحة الحالية
-            document.querySelector('.prev').style.display = currentPage === 1 ? 'none' : 'inline-block';
-            document.querySelector('.next').style.display = currentPage === totalPages ? 'none' : 'inline-block';
+            // إخفاء أو إظهار أزرار التنقل بناءً على عدد الصفحات
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+
+            prevButton.style.display = currentPage === 1 ? 'none' : 'inline-block';
+            nextButton.style.display = currentPage === totalPages || totalPages === 0 ? 'none' : 'inline-block';
         }
 
         // دالة الانتقال إلى الصفحة التالية
         function nextPage() {
             const products = document.querySelectorAll('.product-item');
-            const totalPages = Math.ceil(products.length / productsPerPage);
+            const filteredProducts = Array.from(products).filter(product =>
+                currentCategory === 'all' || product.getAttribute('data-category') === currentCategory
+            );
+            const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
             if (currentPage < totalPages) {
                 currentPage++;
                 displayProducts();
+                window.scrollTo(0, 0); // التمرير إلى أعلى الصفحة عند الانتقال
             }
         }
 
@@ -1098,12 +1118,12 @@
             if (currentPage > 1) {
                 currentPage--;
                 displayProducts();
+                window.scrollTo(0, 0); // التمرير إلى أعلى الصفحة عند الانتقال
             }
         }
 
         // عرض الصفحة الأولى عند تحميل الصفحة
         displayProducts();
-
 
     </script>
 
