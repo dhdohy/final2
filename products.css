@@ -1,0 +1,536 @@
+/* إعادة ضبط بعض العناصر الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* شريط التنبيه العلوي */
+.top-bar {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: #333;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff4757;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo h1 {
+    display: inline-block;
+    color: #f5f5f5;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.navbar ul li {
+    margin: 10 5px;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+.header .navbar ul li a:hover {
+    background-color: #ff5722;
+}
+
+/* الزر الخاص بالقائمة المنسدلة */
+.menu-toggle {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+
+/* البانر الرئيسي */
+
+.hero {
+    background: url('banner.jpg') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(15, 1, 1);
+}
+body {
+    background-image: url(pg1.png.jpg); /* استبدل 'background-image.jpg' برابط الصورة */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+    background-color: #f4f4f4;
+}
+
+/* منتجات مميزة */
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: #fff8f8;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+   
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3b16c2;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item a {
+    text-decoration: none; /* لإزالة الخط تحت الرابط */
+}
+
+
+/* تصميم الأزرار */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+
+/* تنسيق شريط البحث */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* تنسيق شريط الفلترة */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+/* تخطيط الصفحة */
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+
+/* الشبكة: أربعة منتجات في كل صف */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 50px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* التنقل بين الصفحات */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* التنسيق لعرض الجوال */
+@media (max-width: 1024px) {
+    /* القائمة المنسدلة */
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: auto;
+        background: none;
+        border: none;
+    }
+
+    /* تحسين عرض الشبكة الخاصة بالمنتجات */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* تحسين البحث */
+    .search-bar input[type="text"] {
+        width: 72%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* تعديل القائمة للعرض على الشاشات الأصغر */
+    .main-content {
+        flex-direction: column; /* تغيير اتجاه العناصر لتكون رأسية */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .product-item h3 {
+        font-size: 16px;
+    }
+
+    .product-item p {
+        font-size: 12px;
+    }
+
+    /* تعديل الأزرار */
+    .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* تعديل النصوص */
+    .sidebar a {
+        font-size: 14px;
+    }
+
+    /* تحسين عرض الشبكة الخاصة بالمنتجات */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+/* القائمة الرئيسية */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px; /* زيادة حجم الزر */
+    font-size: 18px; /* زيادة حجم النص */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* القائمة الفرعية */
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 90%; /* تقليل المسافة بين القائمة الرئيسية والفرعية */
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* تحسينات على الهواتف الذكية */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+.social-icons a {
+    margin: 0 15px; /* تباعد أفقي بين الأيقونات */
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #28a745; /* تغيير اللون عند المرور على الأيقونة */
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #28a745;
+}
+
+/* جعل التصميم متجاوبًا */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+/* جعل التصميم متجاوبًا مع الهواتف الأصغر */
+@media (max-width: 576px) {
+    .footer-column {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.3rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+/* الفوتر */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* استجابة القائمة الفرعية مع الهواتف */
+@media (max-width: 768px) {
+    .submenu-content {
+        position: relative;
+        left: 0;
+        min-width: 100%; /* عرض القائمة الفرعية يغطي الشاشة */
+        box-shadow: none; /* إزالة الظلال */
+    }
+
+    .dropdown-content {
+        min-width: 100%; /* عرض القائمة المنسدلة يغطي الشاشة */
+    }
+
+    .dropbtn {
+        width: 100%; /* الزر يغطي العرض الكامل للشاشة */
+    }
+}

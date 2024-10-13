@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتج - Delhasbiotech</title>
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="shopro.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- شريط التنبيه العلوي -->
+    <div class="top-bar">
+        عزيزي العميل، لمزيد من المعلومات يرجى الاتصال بنا على 12345
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Delhasbiotech Logo">
+                <h1>Delhasbiotech</h1>
+            </div>
+            <!-- زر القائمة المنسدلة -->
+            <button class="menu-toggle" onclick="toggleMenu()"> ☰ </button>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="conctus.html">اتصل بنا <i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="about.html">عن الشركة <i class="fa-solid fa-building-wheat"></i> </a></li>
+                    <li><a href="about2.html">خدماتنا <i class="fa-solid fa-pencil"></i></a></li>
+                    <li><a href="products.html">المنتجات <i class="fa-brands fa-product-hunt"></i></a></li>
+                    <li><a href="index.html">الرئيسية <i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- كارت المنتج -->
+    <div class="product-card">
+        <div class="product-info">
+            <h1>DELHAS PLUS NPK</h1>
+            <h2>DELHAS PLUS NPK</h2>
+            <p>مخصب زراعي يحتوي على الحديد والزنك والمنجنيز والمغنسيوم والنحاس والبورون والكبريت والموليبدينيم.</p>
+            <div class="safety-instructions">
+                <p>التصنيف: الأسمدة الدوائية رش ورقي</p>
+                <p>تعليمات السلامة</p>
+            </div>
+        </div>
+        <div class="product-image">
+            <img src="" alt="صورة المنتج" id="product-image">
+        </div>
+    </div>
+
+    <!-- كارت مميزات المنتج -->
+    <div class="product-features-card">
+        <h2 class="features-title">مميزات المنتج</h2>
+        <ul class="features-list">
+            <li>يزيد من كفاءة امتصاص العناصر الغذائية الأساسية.</li>
+            <li>يدعم النمو الصحي للنباتات والمحاصيل.</li>
+            <li>يحتوي على مجموعة من العناصر الصغرى الهامة مثل الحديد والزنك والمنجنيز والمغنيسيوم.</li>
+            <li>قابل للذوبان في الماء بالكامل، مما يسهل استخدامه مع أنظمة الري.</li>
+            <li>يعزز مقاومة النبات للظروف البيئية القاسية.</li>
+        </ul>
+    </div>
+
+    <!-- قسم جديد تحت كارت المنتج -->
+    <div class="additional-info">
+        <button class="tab-button active" onclick="showContent('PHI')"> PHI </button>
+        <button class="tab-button active" onclick="showContent('safety')">إحتياطات الأمان </button>
+        <button class="tab-button" onclick="showContent('other-info')">معلومات أخرى</button>
+        <button class="tab-button" onclick="showContent('recommendations')">التوصيات ومعدلات الإستخدام</button>
+        <!-- المحتوى الذي سيتغير بناءً على الزر -->
+        <div id="safety" class="tab-content active">
+            <h2>إحتياطات التخزين:</h2>
+            <p>التخزين في أماكن جيدة التهوية، مع حمايتها من الرطوبة. وعند التخزين في الظروف العادية وفي عبواتها الأصلية
+                لا يحدث تغيير في الخواص الطبيعية أو الحيوية أو الكيميائية خلال عامين علي الأقل.</p>
+            <h2>إحتياطات الاستخدام:</h2>
+            <p>إجراء اختبارات الخلط مع مبيدات الآفات والأسمدة، ويجب ضبط الجرعات الموصى بها سابقاً حسب خصوبة التربة،
+                والحالة الغذائية وكمية المحصول.</p>
+        </div>
+
+        <div id="recommendations" class="tab-content">
+            <h2>التوصيات:</h2>
+            <p>يستخدم لرش المحاصيل الزراعية لتوفير العناصر الصغرى الأساسية.</p>
+            <h2>معدلات الاستخدام:</h2>
+            <p>يتم الرش بمعدل 1 لتر لكل 100 لتر ماء لكل فدان، وتكرار الرش حسب الحاجة.</p>
+        </div>
+
+        <div id="other-info" class="tab-content">
+            <h2>معلومات أخرى:</h2>
+            <p>منتج يستخدم لدعم صحة النباتات والمحاصيل. لمزيد من المعلومات يرجى الاتصال بنا.</p>
+        </div>
+
+        <div id="PHI" class="tab-content">
+            <h2>معلومات أخرى:</h2>
+            <p>منتج يستخدم لدعم صحة النباتات والمحاصيل. لمزيد من المعلومات يرجى الاتصال بنا.</p>
+        </div>
+
+    </div>
+
+    <!-- قسم المنتجات المشابهة -->
+    <div class="product-grid-section">
+        <h2 class="section-title">ألقي نظرة</h2>
+        <p class="section-subtitle">منتجات ذات صلة</p>
+        <div class="product-grid">
+            <!-- الكارت الأول -->
+            <div class="product-item" data-category="seeds">
+                <a href="shopro.html?product-id=1">
+                    <img src="photo/pro.jpg" alt=" بذور">
+                    <h3>DELHAS PLUS NPK</h3>
+                    <p>منتج طبيعي لتغذية التربة وتحسين جودة المحاصيل.</p>
+                    <p class="price">100 جنيه</p>
+                    <a href="shopro.html?product-id=1" class="btn"
+                        onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+            </div>
+            <div class="product-item" data-category="agriculture">
+                <a href="shopro.html?product-id=1">
+                    <img src="photo/pro.jpg" alt="DELHAS PLUS NPK">
+                    <h3>DELHAS PLUS NPK</h3>
+                    <p>حلول متقدمة لتحسين جودة التربة وزيادة الإنتاجية.</p>
+                    <p class="price">200 جنيه</p>
+                    <a href="shopro.html?product-id=1" class="btn"
+                        onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+            </div>
+
+
+            <div class="product-item" data-category="agriculture">
+                <a href="shopro.html?product-id=2">
+                    <img src="photo/zezo.jpg" alt="DELHAS PLUS">
+                    <h3>DELHAS PLUS</h3>
+                    <p>مخصب زراعي يحتوي على الحديد والزنك لتحسين صحة المحاصيل.</p>
+                    <p class="price">200 جنيه</p>
+                    <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+            </div>
+
+
+            <div class="product-item" data-category="seeds">
+                <img src="photo/pro13.jpg" alt=" بذور">
+                <h3>بذور</h3>
+                <p>منتج طبيعي لتغذية التربة وتحسين جودة المحاصيل.</p>
+                <p class="price">100 جنيه</p>
+                <a href="#" class="btn">المزيد</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- الفوتر الإضافي -->
+    <footer class="top-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- عمود تصنيفات المنتجات -->
+                <div class="footer-column">
+                    <h3>تصنيفات المنتجات</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html" onclick="filterByCategory('all')">جميع المنتجات</a></li>
+                        <li><a href="products.html" onclick="filterByCategory('fertilizers')">الأسمدة</a></li>
+                        <li><a href="products.html" onclick="filterByCategory('soil-nutrients')">مغذيات التربة</a></li>
+                        <li><a href="products.html" onclick="filterByCategory('pesticides')">منتجات مكافحة الآفات</a>
+                        </li>
+                        <li><a href="products.html" onclick="filterByCategory('seeds')">البذور الزراعية</a></li>
+                        <li><a href="products.html" onclick="filterByCategory('organic')">المنتجات العضوية</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- عمود القوائم الرئيسية وأيقونات التواصل -->
+                <div class="footer-column">
+                    <h3>القوائم</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">عن الشركة</a></li>
+                        <li><a href="about2.html">خدماتنا</a></li>
+                        <li><a href="conctus.html">اتصل بنا</a></li>
+                    </ul>
+
+
+                    <!-- أيقونات التواصل الاجتماعي -->
+                    <div class="social-icons">
+                        <a href="https://wa.me/+2001030507680"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                        <a href="https://t.me/SI_D_EK"><i class="fa-brands fa-telegram fa-3x"></i></a>
+                        <a href="https://www.facebook.com/zezo.zdan.3"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                        <a href="https://www.instagram.com/si_d_ek/?hl=ar"><i
+                                class="fa-brands fa-instagram fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="center">
+            <p>© 2024 Delhasbiotech جميع الحقوق محفوظة لشركة </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript لتفعيل القائمة المنسدلة -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar .menu');
+            menu.classList.toggle('active');
+        }
+
+        function showContent(contentId) {
+            // إزالة الفئة النشطة من جميع الأزرار
+            var buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(function (button) {
+                button.classList.remove('active');
+            });
+
+            // إضافة الفئة النشطة إلى الزر الذي تم الضغط عليه
+            event.target.classList.add('active');
+
+            // إخفاء جميع المحتويات
+            var contents = document.querySelectorAll('.tab-content');
+            contents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // إظهار المحتوى الذي تم اختياره
+            var selectedContent = document.getElementById(contentId);
+            selectedContent.classList.add('active');
+        }
+    </script>
+
+    <script>
+        // جلب معرّف المنتج من رابط الـ URL
+        function getProductIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('product-id');
+        }
+
+
+        // تعريف المنتجات
+        const products = [
+            {
+                id: 1,
+                name: 'DELHAS NPK FERT',
+                name2: ' دلهاس ان بي كي فيرت',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (1).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 2,
+                name: 'DELHAS MOREOVER NPK ',
+                name2: ' دلهاس مور اوفر ان بي كي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (2).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 3,
+                name: ' DELHAS SOLUTION NPK',
+                name2: ' دلهاس سيلوشن ان بي كي',
+                description: 'مخصب زراعي شامل يحتوي على كافة العناصر الغذائية.',
+                category: 'الأسمدة السائلة',
+                image: '0/1 (3).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه في مكان بارد وجاف.',
+                features: [
+                    'يدعم النمو السريع للنباتات.',
+                    'يحسن جودة التربة.',
+                    'يحتوي على العناصر الكبرى والصغرى.'
+                ],
+                phi: 'PHI: لا ينصح الحصاد لمدة 5 أيام بعد الرش.',
+                recommendations: 'الرش بمعدل 2 لتر لكل 100 لتر ماء.',
+                otherInfo: 'يمكن استخدام المنتج في جميع أنواع التربة الزراعية.'
+            },
+            {
+                id: 4,
+                name: ' DELHAS EXTRA NPK',
+                name2: 'دلهاس اكسترا ان بي كي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (4).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 5,
+                name: 'DELHAS IMPACT npk',
+                name2: ' دلهاس امباكت ان بي كي ',
+                description: 'مخصب طبيعي لتحسين بنية التربة.',
+                category: 'الأسمدة العضوية',
+                image: '0/1 (5).jpg',
+                safetyInstructions: 'تعليمات السلامة: يُحفظ بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يُحسن تهوية التربة.',
+                    'يدعم التربة العضوية.',
+                    'يُعزز من احتفاظ التربة بالرطوبة.'
+                ],
+                phi: 'PHI: آمن للاستخدام طوال موسم الزراعة.',
+                recommendations: 'ينصح باستخدام 1 كجم لكل 100 متر مربع.',
+                otherInfo: 'يُستخدم لتجديد التربة وتحسين بنية المحاصيل.'
+            },
+            {
+                id: 6,
+                name: 'DELHAS PLUS NPK',
+                name2: ' دلهاس بلس ان بي كي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (6).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 7,
+                name: 'DELHAS RAW-SAF ',
+                name2: ' دلهاس رو ساف ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (7).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 8,
+                name: 'DELHAS FOL FAST NPK',
+                name2: ' دلهاس فول فاست ان بي كي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (8).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 9,
+                name: 'DELHAS SPECIAL MAGNESIUM',
+                name2: ' دلهاس سبيشيال ماغنسيوم ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (9).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 10,
+                name: ' Delhas Special Calcium+ME',
+                name2: 'دلهاس سبيشيال كالسيوم',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (10).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 11,
+                name: 'DELHAS SPECIAL 9-5-40',
+                name2: 'دلهاس سبيشيال 9-5-40',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (11).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 12,
+                name: 'Delhas Special CALMAG+B',
+                name2: ' دلهاس سبيشيال كالماج',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (12).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 13,
+                name: ' Delhas Potassium Thiosulfate',
+                name2: 'دلهاس بوتاسيوم ثيوكبريتات',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (13).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 14,
+                name: 'DELHAS SPECIAL 9-5-40',
+                name2: 'دلهاس سبيشيال 9-5-40',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (14).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 15,
+                name: ' Delhas Shoot NPK',
+                name2: 'دلهاس شوت ان بي كي',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (15).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 16,
+                name: ' Delhas Shoot NPK +SE',
+                name2: 'دلهاس شوت ان بي كي + سي يي',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (16).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 17,
+                name: 'DELHAS CALBOR',
+                name2: 'دلهاس كالبور ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (17).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 18,
+                name: 'DELHAS SPECIAL PK 20-17+CU',
+                name2: 'دلهاس سبيشيال بي كي 20+17 +سي يو',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (18).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 19,
+                name: 'DELHAS KUTSIM',
+                name2: 'دلهاس كاتسيم ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (19).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 20,
+                name: 'DELHAS METHIONINE COMBI',
+                name2: 'دلهاس ميثيونين كومبي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (20).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 21,
+                name: 'DELHAS IRON EDTA',
+                name2: 'دلهاس ايرون ايديتا ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (21).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 22,
+                name: 'DELHAS IRON ORTHO',
+                name2: 'دلهاس ايرون اورثو ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (22).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 23,
+                name: 'DELHAS ZINC',
+                name2: 'دلهاس زنك ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (23).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 24,
+                name: 'DELHAS MANGANESE',
+                name2: 'دلهاس منغنيز ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (24).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 25,
+                name: 'DELHAS BORON',
+                name2: 'دلهاس بورون ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (25).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 26,
+                name: 'DELHAS COPPER PLUS',
+                name2: 'دلهاس كوبر بلس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (26).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 27,
+                name: 'DELHAS MOBOR',
+                name2: 'دلهاس موبور ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (27).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 28,
+                name: 'DELHAS  MIXO POWDER',
+                name2: 'دلهاس ميكسو باودر  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (28).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+
+            {
+                id: 29,
+                name: 'DELHAS BORON LIQUID',
+                name2: 'دلهاس بورون ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (29).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 30,
+                name: 'DELHAS AMINO FLORZONE',
+                name2: 'دلهاس أمينو فلورزون  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (30).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+
+            {
+                id: 31,
+                name: 'DELHAS AMINO KAT',
+                name2: 'دلهاس امينو كات  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (31).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+
+            {
+                id: 32,
+                name: 'DELHAS FULL A',
+                name2: 'دلهاس فول اي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (32).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+
+            {
+                id: 33,
+                name: 'DELHAS LIGNO MIX',
+                name2: 'دلهاس لينجو ميكس  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (33).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 34,
+                name: 'DELHAS MANGANESE',
+                name2: 'دلهاس منغنيز ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (34).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 35,
+                name: 'DELHAS HUMIC ACID',
+                name2: 'دلهاس هيوميك اسيد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (35).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 36,
+                name: 'DELHAS MANGANESE',
+                name2: 'دلهاس منغنيز ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (36).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 37,
+                name: 'DELHAS MANGANESE',
+                name2: 'دلهاس منغنيز ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (37).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 38,
+                name: 'DELHAS  HUMIC ACTION',
+                name2: 'دلهاس هيوميك اكشن ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (38).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 39,
+                name: 'DELHAS FULVIC MIX',
+                name2: 'دلهاس فولفيك ميكس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (39).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 40,
+                name: 'DELHAS  FULVIC PLUS',
+                name2: 'دلهاس فولفيك بلس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (40).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 41,
+                name: 'DELHAS HUMICO EXTRA',
+                name2: 'دلهاس هيومكو اكسترا  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (41).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 42,
+                name: 'DELHAS HUMIC ROOTS',
+                name2: 'دلهاس هيوميك روتس  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (42).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 43,
+                name: 'DELHAS POTASSIUM HUMATE',
+                name2: 'دلهاس بوتاسيوم هيومات ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (43).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 44,
+                name: 'DELHAS  AMINO A LIQUID',
+                name2: 'دلهاس امينو اي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (44).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 45,
+                name: 'DELHAS AMINO B LIQUID',
+                name2: 'دلهاس امينو بي ليكويد  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (45).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 46,
+                name: 'DELHAS AMINO MIX A LIQUID',
+                name2: 'دلهاس امينو ميكس اي ليكويد  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (46).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 47,
+                name: 'DELHAS AMINO MIX B LIQUID',
+                name2: 'دلهاس امينو ميكس بي ليكويد  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (47).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 48,
+                name: 'DELHAS AMINO MIX C LIQUID',
+                name2: 'دلهاس امينو ميكس سي ليكويد  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (48).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 49,
+                name: 'DELHAS  AMINO KAT PLUS',
+                name2: 'دلهاس مينو كات بلس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (49).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 50,
+                name: 'DELHAS  AMINO SPECTRO',
+                name2: 'دلهاس امينو سبكترو  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (50).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 51,
+                name: 'DELHAS AMINO NPK 8-10-5',
+                name2: 'دلهاس اامينو ان بي كي 8-10-5 ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (51).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 52,
+                name: 'DELHAS  BIOMIX A LIQUID',
+                name2: 'دلهاس امينو بيوميكس اي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (52).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 53,
+                name: 'DELHAS  BIOMIX B LIQUID',
+                name2: 'دلهاس امينو بيوميكس بي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (53).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 54,
+                name: 'DELHAS  BIOMIX C LIQUID',
+                name2: 'دلهاس امينو بيوميكس سي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (54).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 55,
+                name: 'DELHAS  BIOMIX D LIQUID',
+                name2: 'دلهاس امينو بيوميكس دي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (55).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 56,
+                name: 'DELHAS  BIOMIX  E LIQUID',
+                name2: 'دلهاس امينو بيوميكس يي ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (56).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 57,
+                name: 'DELHAS ALGA SITOKIN MIX',
+                name2: 'دلهاس ألجا سيتوكين ميكس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (57).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 58,
+                name: 'DELHAS VEGAPLUS',
+                name2: 'دلهاس فيغا بلس ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (58).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 59,
+                name: 'DELHAS ORGANO K',
+                name2: 'دلهاس أورجانو كي',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (59).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 60,
+                name: 'DELHAS SOIL CONDITIONER',
+                name2: 'دلهاس سول كوندشنر ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (60).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 61,
+                name: 'DELHAS TURBA',
+                name2: 'دلهاستوربا',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (61).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 62,
+                name: 'DELHAS TURBA B ',
+                name2: 'دلهاس توربا بي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (62).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 63,
+                name: 'DELHAS TURBA C',
+                name2: 'دلهاس توربا سي',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (63).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 64,
+                name: 'DELHAS COMBI GROWTH',
+                name2: 'دلهاس كومبي جروث   ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (64).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 65,
+                name: 'DELHAS SEAGIB',
+                name2: 'دلهاس  سيجاب   ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (65).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 66,
+                name: 'DELHAS TONIC PGR A',
+                name2: 'دلهاس تونيك بي جي ار اي   ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (66).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 67,
+                name: 'DELHAS TONIC PGR B',
+                name2: 'دلهاس تونيك بي جي ار بي   ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (67).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 68,
+                name: 'DELHAS GIBBEST POWDER',
+                name2: 'دلهاس جيبيست باودر ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (68).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 69,
+                name: 'DELHAS GIBBEST LIQUID',
+                name2: 'دلهاس جيبيست ليكويد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (69).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 70,
+                name: 'DELHAS PGR ',
+                name2: 'دلهاس  بي جي ار    ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (70).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 71,
+                name: 'DELHAS BGD',
+                name2: 'دلهاس بي جي دي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (71).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 72,
+                name: 'DELHAS BUTYRIC',
+                name2: 'دلهاس بيتيورك',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (72).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 73,
+                name: 'DELHAS AATC-FOLIC',
+                name2: 'دلهاس اي اي تي سي -فوليك ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (73).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 74,
+                name: 'DELHAS Roots Spectro',
+                name2: 'دلهاس روتس سبكترو ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (74).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 75,
+                name: 'DELHAS AMINO ROOTS A',
+                name2: 'دلهاس  امينو روتس اي ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (75).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 76,
+                name: 'DELHAS AMINO ROOTS B',
+                name2: 'دلهاس  امينو روتس بي  ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (76).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 77,
+                name: 'DELHAS SALT CHANGE',
+                name2: 'دلهاس سالت تشينج ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (77).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 78,
+                name: 'DELHAS MANGANESE',
+                name2: 'دلهاس منغنيز',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (78).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+
+            {
+                id: 79,
+                name: 'DELHAS pH Req',
+                name2: 'دلهاس بي اتش ريك ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (79).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 80,
+                name: 'DELHAS pH Org',
+                name2: 'دلهاس بي اتش اورج ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (80).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 81,
+                name: 'DELHAS PH NP REGULATOR',
+                name2: 'دلهاس بي اتش ان بي ريجوليتور ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (81).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 82,
+                name: 'DELHAS MONOKARBAMID',
+                name2: 'دلهاس مونوكارباميد ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (82).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 83,
+                name: 'DELHAS pH NITRIC',
+                name2: 'دلهاس بي اتش نيتريك ',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (83).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 84,
+                name: 'DELHAS FILMO',
+                name2: 'دلهاس فيلمو',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (84).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            {
+                id: 85,
+                name: 'DELHAS SILICONE',
+                name2: 'دلهاس سيليكون',
+                description: 'مخصب زراعي يحتوي على الحديد والزنك.',
+                category: 'الأسمدة الدوائية',
+                image: '0/1 (85).jpg',
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    'يزيد من كفاءة امتصاص العناصر الغذائية.',
+                    'يدعم النمو الصحي للنباتات.',
+                    'قابل للذوبان في الماء بالكامل.'
+                ],
+                phi: 'عن PHI.',
+                recommendations: 'الرش بمعدل 1 لتر لكل 10000 لتر ماء.',
+                otherInfo: 'يحتوي المنتج على مكونات مفيدة لتحسين جودة المحاصيل وزيادة الإنتاجية في التربة القلوية.'
+            },
+            // إضافة المزيد من المنتجات حتى الوصول إلى 50 منتج
+        ];
+
+        for (let i = 12; i <= 50; i++) {
+            products.push({
+                id: i,
+                name: `DELHAS PRODUCT ${i}`,
+                name2: ' دلهاس ان بي كي فيرت',
+                description: `وصف المنتج ${i}.`,
+                category: 'الأسمدة الدوائية',
+                image: `photo/product_${i}.jpg`,
+                safetyInstructions: 'تعليمات السلامة: احفظه بعيدًا عن متناول الأطفال.',
+                features: [
+                    `ميزة المنتج ${i}.`,
+                    `ميزة إضافية للمنتج ${i}.`,
+                    `ميزة أخرى للمنتج ${i}.`
+                ],
+                phi: `PHI للمنتج ${i}.`,
+                recommendations: `الرش بمعدل 1 لتر لكل 100 لتر ماء للمنتج ${i}.`,
+                otherInfo: `معلومات إضافية عن المنتج ${i}.`
+            });
+        }
+
+
+        // جلب المنتج بناءً على معرّف المنتج
+        function loadProductDetails() {
+            const productId = getProductIdFromURL();
+
+            const product = products.find(p => p.id == productId);
+            if (product) {
+                document.querySelector('.product-info h1').textContent = product.name;
+                document.querySelector('.product-info h2').textContent = product.name2;
+                document.querySelector('.product-info p').textContent = product.description;
+                document.querySelector('.product-image img').src = product.image;
+
+                const safetyInstructions = document.querySelector('.safety-instructions');
+                safetyInstructions.innerHTML = `
+                <p>التصنيف: ${product.category}</p>
+                <p>تعليمات السلامة: ${product.safetyInstructions}</p>
+            `;
+
+                const featuresList = document.querySelector('.features-list');
+                featuresList.innerHTML = '';
+                product.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    featuresList.appendChild(li);
+                });
+
+                document.getElementById('PHI').innerHTML = `
+                <h2>PHI:</h2>
+                <p>${product.phi}</p>
+            `;
+
+                document.getElementById('recommendations').innerHTML = `
+                <h2>التوصيات:</h2>
+                <p>${product.recommendations}</p>
+            `;
+
+                // عرض معلومات "معلومات أخرى"
+                document.getElementById('other-info').innerHTML = `
+            <h2>معلومات أخرى:</h2>
+            <p>${product.otherInfo}</p>
+        `;
+
+            } else {
+                // إذا لم يتم العثور على المنتج
+                document.querySelector('.product-info h1').textContent = 'المنتج غير موجود';
+                document.querySelector('.product-info p').textContent = 'عذرًا، المنتج الذي تحاول عرضه غير متوفر.';
+                document.querySelector('.product-image img').src = '';
+            }
+        }
+
+        // تحميل تفاصيل المنتج عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', loadProductDetails);
+
+    </script>
+</body>
+
+</html>

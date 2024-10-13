@@ -1,0 +1,402 @@
+/* إعادة ضبط بعض العناصر الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+}
+
+/* شريط التنبيه العلوي */
+.top-bar {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: #333;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff4757;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo h1 {
+    display: inline-block;
+    color: #f5f5f5;
+}
+
+/* قائمة التنقل */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 15px;
+}
+
+.header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.header .navbar ul li a:hover {
+    background-color: #ff5722;
+}
+
+/* الزر الخاص بالقائمة المنسدلة */
+.menu-toggle {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+/* البانر الرئيسي */
+.hero {
+    background: url('banner.jpg') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(15, 1, 1);
+}
+
+body {
+    background-image: url(pg1.png.jpg); /* استبدل 'background-image.jpg' برابط الصورة */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* الجمله الكبيره في نص الصفحه */
+.hero-content h2 {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    margin-top: 80px; /* تعديل هذه القيمة حسب ارتفاع الـ navbar */
+    text-align: center; /* تأكد من محاذاة النص إلى المركز */
+}
+
+/* الجمله الصغيرة في نص الصفحه */
+.hero-content p {
+    font-size: 12px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+    text-align: center; /* تأكد من محاذاة النص إلى المركز */
+}
+
+/*  زر المنتجات  */
+.hero-content .btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #683636;
+}
+
+/* قسم المنتجات */
+.product-carousel {
+    width: 60%;
+    margin: 80px auto; /* إضافة مسافة فوق وأسفل */
+}
+
+.product-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin:  15px; /* إضافة مسافة 15px على الجوانب */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3b16c2;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item a {
+    text-decoration: none; /* لإزالة الخط تحت الرابط */
+}
+
+/* تصميم الأزرار */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* الفوتر الإضافي */
+.top-footer {
+    background-color: #f1f1f1;
+    padding: 30px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.top-footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+    margin: 15px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #28a745;
+}
+
+/* تنسيق أيقونات التواصل في نص الفوتر */
+.social-icons {
+    display: flex;
+    justify-content: center; /* لمحاذاة الأيقونات في الوسط أفقيًا */
+    align-items: center; /* لمحاذاة الأيقونات في الوسط عموديًا */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px; /* تباعد أفقي بين الأيقونات */
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #28a745; /* تغيير اللون عند المرور على الأيقونة */
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #28a745;
+}
+
+/* جعل التصميم متجاوبًا */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+/* جعل التصميم متجاوبًا مع الهواتف الأصغر */
+@media (max-width: 576px) {
+    .footer-column {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.3rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+/* الفوتر */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* التنسيق لعرض الجوال */
+@media (max-width: 1024px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: auto;
+        background: none;
+        border: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* تحسينات على الهواتف الذكية */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: auto;
+        background: none;
+        border: none;
+    }
+
+    .hero {
+        height: 250px; /* تقليل ارتفاع البانر أكثر للهواتف الصغيرة */
+        padding: 10px; /* تقليل الحشوة */
+    }
+
+    .hero-content h2 {
+        font-size: 24px; /* تقليل حجم الخط للعناوين */
+    }
+
+    .hero-content p {
+        font-size: 14px; /* تقليل حجم الخط للفقرات */
+    }
+
+}
+
+/* تحسينات على الشاشات الأصغر من 480px */
+@media (max-width: 480px) {
+    .product-item h3 {
+        font-size: 12px; /* تقليل حجم الخط للعناوين */
+    }
+
+    .product-item p {
+        font-size: 10px; /* تقليل حجم الخط للوصف */
+    }
+
+    .hero-content h2 {
+        font-size: 22px; /* تقليل حجم الخط للعناوين */
+    }
+
+    .hero-content p {
+        font-size: 12px; /* تقليل حجم الخط للفقرات */
+    }
+}

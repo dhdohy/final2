@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhasbiotech - متجر المنتجات</title>
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- شريط التنبيه العلوي -->
+    <div class="top-bar">
+        عزيزي العميل، لمزيد من المعلومات يرجى الاتصال بنا على 12345
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Delhasbiotech Logo">
+                <h1>Delhasbiotech</h1>
+            </div>
+            <!-- زر القائمة المنسدلة -->
+            <button class="menu-toggle" onclick="toggleMenu()"> ☰ </button>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="conctus.html">اتصل بنا <i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="about.html">عن الشركة <i class="fa-solid fa-building-wheat"></i> </a></li>
+                    <li><a href="about2.html">خدماتنا <i class="fa-solid fa-pencil"></i></a></li>
+                    <li><a href="products.html">المنتجات <i class="fa-brands fa-product-hunt"></i></a></li>
+                    <li><a href="index.html">الرئيسية <i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- شريط البحث المحدث -->
+    <div class="search-bar">
+        <form action="#" method="GET" onsubmit="event.preventDefault();">
+            <input type="text" id="search-input" placeholder="عن ماذا تبحث..." class="search-input"
+                oninput="searchProducts()">
+            <button type="submit" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- القائمة الجانبية المحدثة - قائمة منسدلة أعلى المنتجات -->
+    <div class="filter-bar">
+        <div class="dropdown">
+            <button class="dropbtn">التصنيفات</button>
+            <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('all')">جميع المنتجات</a>
+                </div>
+
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('agriculture')">المغذيات الزراعية</a>
+                    <div class="submenu-content">
+                        <a href="#" onclick="filterByCategory('npk')">npk</a>
+                        <a href="#" onclick="filterByCategory('nutrients')">المغذيات</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('pesticides')">المبيدات</a>
+                    <div class="submenu-content">
+                        <a href="#" onclick="filterByCategory('insecticides')">مبيدات الحشرات</a>
+                        <a href="#" onclick="filterByCategory('herbicides')">مبيدات الأعشاب</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('organic')">السماد العضوي</a>
+                </div>
+
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('seeds')">البذور</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- شبكة المنتجات -->
+    <div class="product-grid" id="product-grid">
+        <!-- المنتجات هنا -->
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=1">
+                <img src="0\1 (1).jpg" alt=" DELHAS NPK FERT">
+                <h3> DELHAS NPK FERT</h3>
+                <h3> دلهاس ان بي كي فيرت</h3>
+                <p>حلول متقدمة لتحسين جودة التربة.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=1" class="btn"
+                    onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=2">
+                <img src="0/1 (2).jpg" alt=" DELHAS MOREOVER NPK">
+                <h3> DELHAS MOREOVER NPK</h3>
+                <h3> دلهاس مور اوفر ان بي كي</h3>
+                <p>مخصب زراعي يحتوي على الحديد والزنك لتحسين صحة المحاصيل.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=3">
+                <img src="0\1 (3).jpg" alt=" DELHAS SOLUTION NPK">
+                <h3> DELHAS SOLUTION NPK</h3>
+                <h3> دلهاس سيلوشن ان بي كي </h3>
+                <p>حلول متقدمة لتحسين جودة التربة وزيادة الإنتاجية.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=3" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=4">
+                <img src="0\1 (4).jpg" alt="DELHAS EXTRA NPK">
+                <h3>DELHAS EXTRA NPK</h3>
+                <h3> دلهاس اكسترا ان بي كي </h3>
+                <p>محفز نمو فعال لتحسين صحة النباتات.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=4" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=5">
+                <img src="0\1 (5).jpg" alt=" DELHAS IMPACT NPK">
+                <h3> DELHAS IMPACT NPK</h3>
+                <h3> دلهاس امباكت انبي كي</h3>
+                <p>محسن تربة لتحسين التهوية واحتفاظ الرطوبة.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=5" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=6">
+                <img src="0/1 (6).jpg" alt="DELHAS PLUS NPK">
+                <h3>DELHAS PLUS NPK</h3>
+                <h3>دلهاس بلس ان بي كي </h3>
+                <p>محفز عضوي لتحسين نمو النباتات والمحاصيل العضوية.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=6" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=7">
+                <img src="0\1 (7).jpg" alt="DELHAS RAW-SAF ">
+                <h3>DELHAS RAW-SAF </h3>
+                <h3>دلهاس رو ساف </h3>
+                <p>مقوي جذور لزيادة كفاءة امتصاص المياه والعناصر الغذائية.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=7" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=8">
+                <img src="0\1 (8).jpg" alt="DELHAS FOL FAST NPK">
+                <h3>DELHAS FOL FAST NPK </h3>
+                <h3>دلهاس فول فاست ان بي كي </h3>
+                <h3> </h3>
+                <p>مبيد طبيعي لمكافحة الحشرات الضارة.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=8" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=9">
+                <img src="0/1 (9).jpg" alt="DELHAS SPECIAL MAGNESIUM">
+                <h3>DELHAS SPECIAL MAGNESIUM</h3>
+                <h3>دلهاس سبيشيال ماغنسيوم</h3>
+                <p>محفز لنمو الأزهار وزيادة الإزهار.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=9" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="seeds">
+            <a href="shopro.html?product-id=10">
+                <img src="0/1 (10).jpg" alt="Delhas Special Calcium+ME">
+                <h3>Delhas Special Calcium+ME</h3>
+                <h3>دلهاس سبيشيال كالسيوم </h3>
+                <p>خليط تربة مميز لتحسين جودة التربة.</p>
+                <p class="price"></p>
+                <a href="shopro.html?product-id=10" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=11">
+                <img src="0\1 (11).jpg" alt="DELHAS SPECIAL 9-5-40">
+                <h3>DELHAS SPECIAL 9-5-40</h3>
+                <h3>دلهاس سبيشيال 9-5-40</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=11" class="btn">المزيد</a>
+        </div>
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=12">
+                <img src="0\1 (12).jpg" alt=" Delhas Special CALMAG+B">
+                <h3> Delhas Sp0\1 (12).jpgecial CALMAG+B</h3>
+                <h3>دلهاس سبيشيال كالماج</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=12" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=13">
+                <img src="0\1 (13).jpg" alt=" Delhas Potassium Thiosulfate">
+                <h3> Delhas Potassium Thiosulfate</h3>
+                <h3>دلهاس بوتاسيوم ثيوكبريتات </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=13" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=14">
+                <img src="0\1 (14).jpg" alt="DELHAS SPECIAL 9-5-40">
+                <h3>DELHAS SPECIAL 9-5-40</h3>
+                <h3>دلهاس سبيشيال 9-5-40</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=14" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=15">
+                <img src="0/1 (15).jpg" alt=" Delhas Shoot NPK">
+                <h3> Delhas Shoot NPK +AA </h3>
+                <h3>دلهاس شوت ان بي كي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=15" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=16">
+                <img src="0\1 (16).jpg" alt=" Delhas Shoot NPK +SE">
+                <h3> DELHAS SHOOT NPK +SE</h3>
+                <h3>دلهاس شوت ان بي كي + سي يي</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=16" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=17">
+                <img src="0/1 (17).jpg" alt="DELHAS CALBOR">
+                <h3> DELHAS CALBOR</h3>
+                <h3>دلهاس كالبور </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=17" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="npk">
+            <a href="shopro.html?product-id=18">
+                <img src="0\1 (18).jpg" alt=" DELHAS SPECIAL PK 20-17+CU">
+                <h3> DELHAS SPECIAL PK 20-17+CU</h3>
+                <h3>دلهاس سبيشيال بي كي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=18" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=19">
+                <img src="0\1 (19).jpg" alt="DELHAS KUTSIM">
+                <h3> DELHAS KUTSIM</h3>
+                <h3>دلهاس كاتسيم </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=19" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=20">
+                <img src="0\1 (20).jpg" alt="DELHAS METHIONINE COMBI">
+                <h3> DELHAS METHIONINE COMBI</h3>
+                <h3>دلهاس ميثيونين كومبي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=20" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=21">
+                <img src="0/1 (21).jpg" alt="DELHAS IRON EDTA">
+                <h3>DELHAS IRON EDTA</h3>
+                <h3>دلهاس ايرون ايديتا </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=21" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=22">
+                <img src="0\1 (22).jpg" alt="DELHAS IRON ORTHO">
+                <h3>DELHAS IRON ORTHO</h3>
+                <h3>دلهاس ايرون اورثو </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=23">
+                <img src="0\1 (23).jpg" alt="DELHAS ZINC">
+                <h3> DELHAS ZINC</h3>
+                <h3>دلهاس زنك </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=23" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=24">
+                <img src="0\1 (24).jpg" alt="DELHAS MANGANESE">
+                <h3> DELHAS MANGANESE</h3>
+                <h3>دلهاس منغنيز </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=24" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=25">
+                <img src="0\1 (25).jpg" alt="DELHAS BORON">
+                <h3> DELHAS BORON</h3>
+                <h3>دلهاس بورون </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=25" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=26">
+                <img src="0\1 (26).jpg" alt="DELHAS COPPER PLUS">
+                <h3> DELHAS COPPER PLUS</h3>
+                <h3>دلهاس كوبر بلس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=26" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=27">
+                <img src="0/1 (27).jpg" alt="DELHAS  MOBOR">
+                <h3> DELHAS MOBOR</h3>
+                <h3>دلهاس موبور </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=27" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=28">
+                <img src="0\1 (28).jpg" alt="DELHAS MIXO POWDER">
+                <h3> DELHAS MIXO POWDER/h3>
+                    <h3>دلهاس ميكسو باودر </h3>
+                    <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                    <p class="price"> </p>
+                    <a href="shopro.html?product-id=28" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=29">
+                <img src="0/1 (29).jpg" alt="DELHAS BORON LIQUID">
+                <h3> DELHAS BORON LIQUID</h3>
+                <h3>دلهاس بورون ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=29" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=30">
+                <img src="0\1 (30).jpg" alt="DELHAS AMINO FLORZONE">
+                <h3> DELHAS AMINO FLORZONE</h3>
+                <h3>دلهاس أمينو فلورزون </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=30" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=31">
+                <img src="0/1 (31).jpg" alt="DELHAS AMINO KAT">
+                <h3> DELHAS AMINO KAT</h3>
+                <h3>دلهاس امينو كات </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=31" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=32">
+                <img src="0/1 (32).jpg" alt="DELHAS FULL A">
+                <h3> DELHAS FULL A</h3>
+                <h3>دلهاس فول اي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=32" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=33">
+                <img src="0/1 (33).jpg" alt="DELHAS LIGNO MIX">
+                <h3> DELHAS LIGNO MIX</h3>
+                <h3>دلهاس لينجو ميكس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=33" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=34">
+                <img src="0/1 (34).jpg" alt="DELHAS MANGANESE">
+                <h3> DELHAS MANGANESE</h3>
+                <h3>دلهاس منغنيز </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=34" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=35">
+                <img src="0/1 (35).jpg" alt="DELHAS HUMIC ACID">
+                <h3> DELHAS HUMIC ACID</h3>
+                <h3>دلهاس هيوميك اسيد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=35" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=36">
+                <img src="0/1 (36).jpg" alt="DELHAS MANGANESE">
+                <h3> DELHAS MANGANESE</h3>
+                <h3>دلهاس منغنيز </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=36" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=37">
+                <img src="0/1 (37).jpg" alt="DELHAS MANGANESE">
+                <h3> DELHAS MANGANESE</h3>
+                <h3>دلهاس منغنيز </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=37" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=38">
+                <img src="0/1 (38).jpg" alt="DELHAS HUMIC ACTION">
+                <h3> DELHAS HUMIC ACTION</h3>
+                <h3>دلهاس هيوميك اكشن </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=38" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=39">
+                <img src="0/1 (39).jpg" alt="DELHAS FULVIC MIX">
+                <h3> DELHAS FULVIC MIX</h3>
+                <h3>دلهاس فولفيك ميكس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=39" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=40">
+                <img src="0/1 (40).jpg" alt="DELHAS FULVIC PLUS">
+                <h3> DELHAS FULVIC PLUS</h3>
+                <h3>دلهاس فولفيك بلس</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=40" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=41">
+                <img src="0/1 (41).jpg" alt="DELHAS HUMICO EXTRA">
+                <h3> DELHAS HUMICO EXTRA</h3>
+                <h3>دلهاس هيومكو اكسترا </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=41" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=42">
+                <img src="0/1 (42).jpg" alt="DELHAS HUMIC ROOTS">
+                <h3> DELHAS HUMIC ROOTS</h3>
+                <h3>دلهاس هيوميك روتس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=42" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=43">
+                <img src="0/1 (43).jpg" alt="DELHAS POTASSIUM HUMATE">
+                <h3> DELHAS POTASSIUM HUMATE</h3>
+                <h3>دلهاس بوتاسيوم هيومات </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=43" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=44">
+                <img src="0/1 (44).jpg" alt="DELHAS AMINO A LIQUID">
+                <h3> DELHAS AMINO A LIQUID</h3>
+                <h3>دلهاس امينو اي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=44" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=45">
+                <img src="0/1 (45).jpg" alt="DELHAS AMINO B LIQUID">
+                <h3> DELHAS AMINO B LIQUID</h3>
+                <h3>دلهاس امينو بي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=45" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=46">
+                <img src="0/1 (46).jpg" alt="DELHAS AMINO MIX A LIQUID">
+                <h3> DELHAS AMINO MIX A LIQUID</h3>
+                <h3>دلهاس امينو ميكس اي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=46" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=47">
+                <img src="0/1 (47).jpg" alt="DELHAS AMINO MIX B LIQUID">
+                <h3> DELHAS AMINO MIX B LIQUID</h3>
+                <h3>دلهاس امينو ميكس بي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=47" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=48">
+                <img src="0/1 (48).jpg" alt="DELHAS AMINO MIX C LIQUID">
+                <h3> DELHAS AMINO MIX C LIQUID</h3>
+                <h3>دلهاس امينو ميكس سي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=48" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=49">
+                <img src="0/1 (49).jpg" alt="DELHAS AMINO KAT PLUS">
+                <h3> DELHAS AMINO KAT PLUS</h3>
+                <h3>دلهاس امينو كات بلس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=49" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=50">
+                <img src="0/1 (50).jpg" alt="DELHAS AMINO SPECTRO">
+                <h3> DELHAS AMINO SPECTRO</h3>
+                <h3>دلهاس امينو سبكترو </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=50" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=51">
+                <img src="0/1 (51).jpg" alt="DELHAS AMINO NPK 8-10-5">
+                <h3> DELHAS AMINO NPK 8-10-5</h3>
+                <h3>دلهاس امينو ان بي كي 8-10-5 </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=51" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=52">
+                <img src="0/1 (52).jpg" alt="DELHAS BIOMIX A LIQUID">
+                <h3> DELHAS BIOMIX A LIQUID</h3>
+                <h3>دلهاس بيوميكس اي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=52" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=53">
+                <img src="0/1 (53).jpg" alt="DELHAS BIOMIX B LIQUID">
+                <h3> DELHAS BIOMIX B LIQUID</h3>
+                <h3>دلهاس بيوميكس بي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=53" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=54">
+                <img src="0/1 (54).jpg" alt="DELHAS BIOMIX C LIQUID">
+                <h3> DELHAS BIOMIX C LIQUID</h3>
+                <h3>دلهاس بيوميكس سي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=54" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=55">
+                <img src="0/1 (55).jpg" alt="DELHAS BIOMIX D LIQUID">
+                <h3> DELHAS BIOMIX D LIQUID</h3>
+                <h3>دلهاس بيوميكس دي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=55" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=56">
+                <img src="0/1 (56).jpg" alt="DELHAS BIOMIX E LIQUID">
+                <h3> DELHAS BIOMIX E LIQUID</h3>
+                <h3>دلهاس بيوميكس يي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=56" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=57">
+                <img src="0/1 (57).jpg" alt="DELHAS ALGA SITOKIN MIX">
+                <h3> DELHAS ALGA SITOKIN MIX</h3>
+                <h3>دلهاس ألجا سيتوكين ميكس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=57" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=58">
+                <img src="0/1 (58).jpg" alt=" DELHAS VEGAPLUS">
+                <h3> DELHAS VEGAPLUS</h3>
+                <h3>دلهاس فيغا بلس </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=58" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=59">
+                <img src="0/1 (59).jpg" alt="DELHAS ORGANO K">
+                <h3> DELHAS ORGANO K</h3>
+                <h3>دلهاس أورجانو كي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=59" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=60">
+                <img src="0/1 (60).jpg" alt="DELHAS SOIL CONDITIONER">
+                <h3> DELHAS SOIL CONDITIONER</h3>
+                <h3>دلهاس سول كوندشنر </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=60" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=61">
+                <img src="0/1 (61).jpg" alt="DELHAS TURBA">
+                <h3> DELHAS TURBA</h3>
+                <h3>دلهاس توربا  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=61" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=62">
+                <img src="0/1 (62).jpg" alt="DELHAS TURBA B">
+                <h3> DELHAS TURBA B</h3>
+                <h3>دلهاس توربا بي</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=62" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=63">
+                <img src="0/1 (63).jpg" alt="DELHAS TURBA C">
+                <h3> DELHAS TURBA C</h3>
+                <h3>دلهاس توربا سي</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=63" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=64">
+                <img src="0/1 (64).jpg" alt="DELHAS COMBI GROWTH">
+                <h3> DELHAS COMBI GROWTH</h3>
+                <h3>دلهاس كومبي جروث  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=64" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=65">
+                <img src="0/1 (65).jpg" alt="DELHAS SEAGIB">
+                <h3> DELHAS SEAGIB</h3>
+                <h3>دلهاس سيجاب </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=65" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=66">
+                <img src="0/1 (66).jpg" alt="DELHAS TONIC PGR A">
+                <h3> DELHAS TONIC PGR A</h3>
+                <h3>دلهاس تونيك بي جي ار اي</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=66" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=67">
+                <img src="0/1 (67).jpg" alt="DELHAS TONIC PGR B">
+                <h3> DELHAS TONIC PGR B</h3>
+                <h3>دلهاس تونيك بي جي ار بي</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=67" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=68">
+                <img src="0/1 (68).jpg" alt="DELHAS GIBBEST POWDER">
+                <h3> DELHAS GIBBEST POWDER</h3>
+                <h3>دلهاس جيبيست باودر </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=68" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=69">
+                <img src="0/1 (69).jpg" alt="DELHAS GIBBEST LIQUID">
+                <h3> DELHAS GIBBEST LIQUID</h3>
+                <h3>دلهاس جيبيست ليكويد  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=69" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=70">
+                <img src="0/1 (70).jpg" alt="DELHAS PGR">
+                <h3> DELHAS PGR</h3>
+                <h3>دلهاس بي جي ار </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=70" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=71">
+                <img src="0/1 (71).jpg" alt="DELHAS BGD">
+                <h3> DELHAS BGD</h3>
+                <h3>دلهاس بي جي دي  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=71" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=72">
+                <img src="0/1 (72).jpg" alt="DELHAS BUTYRIC">
+                <h3> DELHAS BUTYRIC</h3>
+                <h3>دلهاس بيتيورك </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=72" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=73">
+                <img src="0/1 (73).jpg" alt="DELHAS AATC-FOLIC">
+                <h3> DELHAS AATC-FOLIC</h3>
+                <h3>دلهاس اي اي تي سي -فوليك </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=73" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=74">
+                <img src="0/1 (74).jpg" alt="DELHAS Roots Spectro">
+                <h3> DELHAS Roots Spectro</h3>
+                <h3>دلهاس روتس سبكترو  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=74" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=75">
+                <img src="0/1 (75).jpg" alt="DELHAS AMINO ROOTS A">
+                <h3> DELHAS AMINO ROOTS A</h3>
+                <h3>دلهاس امينو روتس اي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=75" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=76">
+                <img src="0/1 (76).jpg" alt="DELHAS AMINO ROOTS B">
+                <h3> DELHAS AMINO ROOTS B</h3>
+                <h3>دلهاس امينو روتس بي </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=76" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=77">
+                <img src="0/1 (77).jpg" alt="DELHAS SALT CHANGE">
+                <h3> DELHAS SALT CHANGE</h3>
+                <h3>دلهاس سالت تشينج </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=77" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=78">
+                <img src="0/1 (78).jpg" alt="DELHAS MANGANESE">
+                <h3> DELHAS MANGANESE</h3>
+                <h3>دلهاس منغنيز </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=78" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=79">
+                <img src="0/1 (79).jpg" alt="DELHAS pH Req">
+                <h3> DELHAS pH Req</h3>
+                <h3>دلهاس بي اتش ريك </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=79" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=80">
+                <img src="0/1 (80).jpg" alt="DELHAS pH Org">
+                <h3> DELHAS pH Org</h3>
+                <h3>دلهاس بي اتش اورج </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=80" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=81">
+                <img src="0/1 (81).jpg" alt="DELHAS PH NP REGULATOR">
+                <h3> DELHAS PH NP REGULATOR</h3>
+                <h3>دلهاس بي اتش ان بي ريجوليتور </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=81" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=82">
+                <img src="0/1 (82).jpg" alt="DELHAS Ph MONOKARBAMID">
+                <h3> DELHAS Ph MONOKARBAMID</h3>
+                <h3>دلهاس مونوكارباميد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=82" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=83">
+                <img src="0/1 (83).jpg" alt="DELHAS pH NITRIC">
+                <h3> DELHAS pH NITRIC</h3>
+                <h3>دلهاس بي اتش نيتريك </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=83" class="btn">المزيد</a>
+        </div>
+
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=84">
+                <img src="0/1 (84).jpg" alt="DELHAS FILMO">
+                <h3> DELHAS FILMO</h3>
+                <h3>دلهاس فيلمو</h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=84" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=85">
+                <img src="0/1 (85).jpg" alt="DELHAS SILICONE">
+                <h3> DELHAS SILICONE</h3>
+                <h3>دلهاس سيليكون  </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=85" class="btn">المزيد</a>
+        </div>
+
+      
+
+       
+
+
+    </div>
+
+    <!-- أزرار التنقل بين الصفحات -->
+    <div class="pagination">
+        <button class="next" onclick="nextPage()">الصفحة التالية</button>
+        <span id="page-number">1</span>
+        <button class="prev" onclick="prevPage()">الصفحة السابقة</button>
+    </div>
+
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="center">
+            <p>© 2024 Delhasbiotech جميع الحقوق محفوظة لشركة </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript لتفعيل القائمة المنسدلة -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar .menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+    <!-- JavaScript لتصفية المنتجات -->
+    <script>
+        // دالة البحث عن المنتجات
+        function searchProducts() {
+            var input = document.getElementById('search-input').value.toLowerCase();
+            var products = document.getElementsByClassName('product-item');
+            for (var i = 0; i < products.length; i++) {
+                var productName = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (productName.includes(input)) {
+                    products[i].style.display = 'block';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+
+        // دالة التصفية حسب الفئة
+        function filterByCategory(category) {
+            var products = document.getElementsByClassName('product-item');
+            for (var i = 0; i < products.length; i++) {
+                if (category === 'all' || products[i].getAttribute('data-category') === category) {
+                    products[i].style.display = 'block';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+
+            // تفعيل الفئة النشطة
+            var links = document.getElementsByClassName('category-link');
+            for (var j = 0; j < links.length; j++) {
+                links[j].classList.remove('active');
+            }
+            event.target.classList.add('active');
+        }
+
+
+        function openProduct(imagePath, productId) {
+            // تخزين مسار الصورة في localStorage
+            localStorage.setItem('productImage', imagePath);
+            localStorage.setItem('productId', productId);
+
+            // الانتقال إلى صفحة مميزات المنتج
+            window.location.href = 'shopro.html';
+
+            function saveImageToLocalStorage(imagePath) {
+                localStorage.setItem('productImage', imagePath);
+            }
+        }
+
+        // تحديد عدد المنتجات في كل صفحة (5 صفوف × 4 منتجات لكل صف = 20 منتج في كل صفحة)
+        const productsPerPage = 5 * 4;
+        let currentPage = 1; // بدءًا من الصفحة الأولى
+
+        function displayProducts() {
+            const products = document.querySelectorAll('.product-item'); // الحصول على جميع المنتجات
+            const totalPages = Math.ceil(products.length / productsPerPage); // حساب إجمالي عدد الصفحات
+
+            // إخفاء جميع المنتجات في البداية
+            products.forEach((product) => {
+                product.style.display = 'none';
+            });
+
+            // حساب نطاق المنتجات التي سيتم عرضها في الصفحة الحالية
+            const start = (currentPage - 1) * productsPerPage;
+            const end = start + productsPerPage;
+
+            // عرض المنتجات في الصفحة الحالية فقط
+            for (let i = start; i < end && i < products.length; i++) {
+                products[i].style.display = 'block';
+            }
+
+            // تحديث رقم الصفحة
+            document.getElementById('page-number').textContent = `الصفحة ${currentPage} من ${totalPages}`;
+
+            // إخفاء أو إظهار أزرار التنقل بناءً على الصفحة الحالية
+            document.querySelector('.prev').style.display = currentPage === 1 ? 'none' : 'inline-block';
+            document.querySelector('.next').style.display = currentPage === totalPages ? 'none' : 'inline-block';
+        }
+
+        // دالة الانتقال إلى الصفحة التالية
+        function nextPage() {
+            const products = document.querySelectorAll('.product-item');
+            const totalPages = Math.ceil(products.length / productsPerPage);
+
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayProducts();
+            }
+        }
+
+        // دالة الرجوع إلى الصفحة السابقة
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayProducts();
+            }
+        }
+
+        // عرض الصفحة الأولى عند تحميل الصفحة
+        displayProducts();
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

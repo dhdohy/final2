@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhasbiotech - مغذيات زراعية</title>
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+   <!-- استدعاء Slick Carousel CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+
+    <!-- شريط التنبيه العلوي -->
+    <div class="top-bar">
+        عزيزي العميل، لمزيد من المعلومات يرجى الاتصال بنا على 12345
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Delhasbiotech Logo">
+                <h1>Delhasbiotech</h1>
+            </div>
+             <!-- زر القائمة المنسدلة -->
+                <button class="menu-toggle" onclick="toggleMenu()"> ☰ </button>
+                 <nav class="navbar"> 
+                    <ul class="menu">
+                        <li><a href="conctus.html">اتصل بنا  <i class="fa-solid fa-phone"></i></a></li> 
+                        <li><a href="about.html">عن الشركة <i class="fa-solid fa-building-wheat"></i> </a></li>
+                        <li><a href="about2.html">خدماتنا  <i class="fa-solid fa-pencil"></i></a></li>
+                        <li><a href="products.html">المنتجات  <i class="fa-brands fa-product-hunt"></i></a></li>
+                        <li><a href="index.html">الرئيسية  <i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-features-card">
+        <h2 class="features-title">  Delhasbiotech Biyoteknoloji LTD STI </h2>
+        <ul class="features-list"> sooon.....</ul>
+    </div>
+
+      <!-- الفوتر الإضافي -->
+<footer class="top-footer">
+    <div class="container">
+        <div class="footer-columns">
+<!-- عمود تصنيفات المنتجات -->
+<div class="footer-column">
+    <h3>تصنيفات المنتجات</h3>
+    <ul class="footer-links">
+        <li><a href="products.html" onclick="filterByCategory('all')">جميع المنتجات</a></li>
+        <li><a href="products.html" onclick="filterByCategory('fertilizers')">الأسمدة</a></li>
+        <li><a href="products.html" onclick="filterByCategory('soil-nutrients')">مغذيات التربة</a></li>
+        <li><a href="products.html" onclick="filterByCategory('pesticides')">منتجات مكافحة الآفات</a></li>
+        <li><a href="products.html" onclick="filterByCategory('seeds')">البذور الزراعية</a></li>
+        <li><a href="products.html" onclick="filterByCategory('organic')">المنتجات العضوية</a></li>
+    </ul>
+</div>
+
+
+            <!-- عمود القوائم الرئيسية وأيقونات التواصل -->
+            <div class="footer-column">
+                <h3>القوائم</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="about2.html">خدماتنا</a></li>
+                    <li><a href="conctus.html">اتصل بنا</a></li>
+                </ul>
+
+                
+                <!-- أيقونات التواصل الاجتماعي -->
+                <div class="social-icons">
+                    <a href="https://wa.me/+2001030507680"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                    <a href="https://t.me/SI_D_EK"><i class="fa-brands fa-telegram fa-3x"></i></a>
+                    <a href="https://www.facebook.com/zezo.zdan.3"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/si_d_ek/?hl=ar"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <!-- الفوتر -->
+<footer>
+    <div class="clickable">
+        <p>© 2024 Delhasbiotech Biyoteknoloji LTD STI جميع الحقوق محفوظة لشركة</p>
+    </div>
+</footer>
+<!-- JavaScript لتفعيل القائمة المنسدلة -->
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.navbar .menu');
+        menu.classList.toggle('active');
+    }
+</script>

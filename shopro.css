@@ -1,0 +1,533 @@
+/* إعادة ضبط بعض العناصر الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* شريط التنبيه العلوي */
+.top-bar {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: #333;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff4757;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo h1 {
+    display: inline-block;
+    color: #f5f5f5;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: #ff5722;
+}
+
+.navbar ul li {
+    margin: 10 5px;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* الزر الخاص بالقائمة المنسدلة */
+.menu-toggle {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+/* البانر الرئيسي */
+.hero {
+    background: url('banner.jpg') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(15, 1, 1);
+}
+
+body {
+    background-image: url(pg1.png.jpg);
+    /* استبدل 'background-image.jpg' برابط الصورة */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+    background-color: #f4f4f4;
+}
+
+/* كارت المنتج */
+.product-card {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    /* تعديل لمحاذاة المحتوى */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* معلومات المنتج */
+.product-info {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 50%;
+    text-align: right;
+    /* محاذاة النص لليمين */
+}
+
+/* عنوان المنتج */
+.product-info h1 {
+    font-size: 28px;
+    color: #83b978;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    /* إضافة مسافة أعلى لاسم المنتج */
+    text-align: right;
+    /* محاذاة النص لليمين */
+}
+
+/* وصف المنتج */
+.product-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: right;
+    /* محاذاة النص لليمين */
+}
+
+/* تعليمات السلامة */
+.safety-instructions {
+    margin-top: 20px;
+    text-align: right;
+    /* محاذاة النص لليمين */
+}
+
+.safety-instructions p {
+    font-weight: bold;
+}
+
+/* الصورة داخل الكارت */
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    /* تحديد أقصى عرض للصورة */
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل للصورة */
+}
+
+
+
+/* كارت مميزات المنتج */
+.product-features-card {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.features-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    /* لتناسب الكتابة من اليمين لليسار */
+}
+
+.features-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام الخط Cairo */
+}
+
+/* تنسيقات القسم الجديد */
+.additional-info {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: 1px solid #ff4757;
+    color: #ff4757;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #ff4757;
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+.tab-content {
+    margin-top: 20px;
+    text-align: right;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* تنسيق القسم */
+.product-grid-section {
+    background-color: #e3f6d4;
+    /* اللون الخلفي للقسم */
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* تنسيق شبكة الكروت */
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: #fff8f8;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3b16c2;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item a {
+    text-decoration: none;
+    /* لإزالة الخط تحت الرابط */
+}
+
+
+/* تصميم الأزرار */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+    /* استخدام خط Cairo */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+
+/* تحسينات على الهواتف */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .product-info {
+        max-width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+        /* تغيير المحاذاة إلى الوسط على الشاشات الصغيرة */
+    }
+
+    .product-image {
+        max-width: 80%;
+        margin: 0 auto;
+        /* محاذاة الصورة في الوسط */
+    }
+
+    .product-info h1 {
+        margin-top: 5px;
+        /* تقليل المسافة العلوية */
+        font-size: 24px;
+        /* تقليل حجم الخط لاسم المنتج */
+    }
+
+    .product-info p {
+        font-size: 14px;
+        /* تقليل حجم النص لوصف المنتج */
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: auto;
+        background: none;
+        border: none;
+    }
+
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    /* تحسينات على الهواتف */
+    @media (max-width: 768px) {
+
+        /* شريط التنبيه العلوي */
+        .top-bar {
+            font-size: 8px;
+            padding: 8px 0;
+        }
+
+        /* تكييف رأس الصفحة */
+        .header .container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* تكييف القائمة */
+        .navbar ul {
+            display: none;
+            flex-direction: column;
+        }
+
+        .navbar ul.active {
+            display: block;
+        }
+
+        .menu-toggle {
+            display: inline-block;
+            font-size: 24px;
+            margin-left: auto;
+            background: none;
+            border: none;
+        }
+
+        /* تكييف البانر */
+        .hero {
+            height: 300px;
+        }
+
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* عرض عمودين للمنتجات */
+            gap: 20px;
+            /* مسافة بين الكروت */
+        }
+
+        /* تعديل حجم كروت المنتجات لتناسب العرض في عمودين */
+        .product-item {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .product-item h3 {
+            font-size: 16px;
+        }
+
+        .product-item p {
+            font-size: 12px;
+        }
+
+        /* تعديل الأزرار */
+        .btn {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+
+        /* تكييف الفوتر */
+        footer {
+            padding: 15px 0;
+            font-size: 12px;
+        }
+    }
+}
+
+/* الفوتر */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

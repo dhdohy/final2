@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhasbiotech - مغذيات زراعية</title>
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+   <!-- استدعاء Slick Carousel CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- شريط التنبيه العلوي -->
+    <div class="top-bar">
+        عزيزي العميل، لمزيد من المعلومات يرجى الاتصال بنا على 12345
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Delhasbiotech Logo">
+                <h1>Delhasbiotech</h1>
+            </div>
+             <!-- زر القائمة المنسدلة -->
+                <button class="menu-toggle" onclick="toggleMenu()"> ☰ </button>
+                 <nav class="navbar"> 
+                    <ul class="menu">
+                        <li><a href="conctus.html">اتصل بنا  <i class="fa-solid fa-phone"></i></a></li> 
+                        <li><a href="about.html">عن الشركة <i class="fa-solid fa-building-wheat"></i> </a></li>
+                        <li><a href="about2.html">خدماتنا  <i class="fa-solid fa-pencil"></i></a></li>
+                        <li><a href="products.html">المنتجات  <i class="fa-brands fa-product-hunt"></i></a></li>
+                        <li><a href="index.html">الرئيسية  <i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بانر رئيسي -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>نحن نتميز بخبرة واسعة وإتقان لا مثيل له في تقديم أفضل الحلول الزراعية، لضمان نمو صحي ومستدام لمحاصيلكم.</h2>
+            <p>تواصل معنا الآن لمعرفة المزيد حول منتجاتنا وخدماتنا المتميزة للمزارعين والمزارع الكبرى.</p>
+            <a href="products.html" class="btn">المنتجات </a>
+        </div>
+    </section>
+
+<!-- إضافة الصورة تحت البانر الرئيسي -->
+<div class="banner">
+    <!-- شريط المنتجات المتحرك -->
+    <section class="product-carousel">
+        <div class="product-item">
+            <a href="shopro.html?product-id=1" >
+            <img src="photo/pro.jpg" alt=" بذور">
+            <h3>DELHAS PLUS NPK</h3>
+            <p>منتج طبيعي لتغذية التربة وتحسين جودة المحاصيل.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=1" class="btn" onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+        </div>
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=1" >
+            <img src="photo/pro.jpg" alt="DELHAS PLUS NPK">
+            <h3>DELHAS PLUS NPK</h3>
+            <p>حلول متقدمة لتحسين جودة التربة وزيادة الإنتاجية.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=1" class="btn" onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+        </div>
+    
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=2" >
+            <img src="photo/zezo.jpg" alt="DELHAS PLUS">
+            <h3>DELHAS PLUS</h3>
+            <p>مخصب زراعي يحتوي على الحديد والزنك لتحسين صحة المحاصيل.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+        </div>
+    
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=3" >
+            <img src="photo\pro0.jpg" alt="DELHAS SUPER FERTILIZER">
+            <h3>DELHAS SUPER FERTILIZER</h3>
+            <p>حلول متقدمة لتحسين جودة التربة وزيادة الإنتاجية.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=3" class="btn">المزيد</a>
+        </div>
+    
+        <div class="product-item" data-category="pesticides">
+            <a href="shopro.html?product-id=4" >
+            <img src="photo/pro3.jpg" alt="DELHAS GROWTH BOOSTER">
+            <h3>DELHAS GROWTH BOOSTER</h3>
+            <p>محفز نمو فعال لتحسين صحة النباتات.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=4" class="btn">المزيد</a>
+        </div>
+    
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=5" >
+            <img src="photo\pro5.jpg" alt="DELHAS SOIL ENRICHER">
+            <h3>DELHAS SOIL ENRICHER</h3>
+            <p>محسن تربة لتحسين التهوية واحتفاظ الرطوبة.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=5" class="btn">المزيد</a>
+        </div>
+        <!-- قم بإضافة المزيد من المنتجات حتى تصل إلى 15 منتجًا -->
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=2" >
+            <img src="photo/zezo.jpg" alt="DELHAS PLUS">
+            <h3>DELHAS PLUS</h3>
+            <p>مخصب زراعي يحتوي على الحديد والزنك لتحسين صحة المحاصيل.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=3" >
+            <img src="photo\pro0.jpg" alt="DELHAS SUPER FERTILIZER">
+            <h3>DELHAS SUPER FERTILIZER</h3>
+            <p>حلول متقدمة لتحسين جودة التربة وزيادة الإنتاجية.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=3" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="pesticides">
+            <a href="shopro.html?product-id=4" >
+            <img src="photo/pro3.jpg" alt="DELHAS GROWTH BOOSTER">
+            <h3>DELHAS GROWTH BOOSTER</h3>
+            <p>محفز نمو فعال لتحسين صحة النباتات.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=4" class="btn">المزيد</a>
+        </div>
+        
+        
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=5" >
+            <img src="photo\pro5.jpg" alt="DELHAS SOIL ENRICHER">
+            <h3>DELHAS SOIL ENRICHER</h3>
+            <p>محسن تربة لتحسين التهوية واحتفاظ الرطوبة.</p>
+            <p class="price">200 جنيه</p>
+            <a href="shopro.html?product-id=5" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="organic">
+            <a href="shopro.html?product-id=6" >
+            <img src="photo\pro4.jpg" alt="DELHAS ORGANIC BOOST">
+            <h3>DELHAS ORGANIC BOOST</h3>
+            <p>محفز عضوي لتحسين نمو النباتات والمحاصيل العضوية.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=6" class="btn">المزيد</a>
+        </div>
+        <div class="product-item" data-category="agriculture">
+            <a href="shopro.html?product-id=7" >
+            <img src="photo/pro5.jpg" alt="DELHAS ROOT STRENGTHENER">
+            <h3>DELHAS ROOT STRENGTHENER</h3>
+            <p>مقوي جذور لزيادة كفاءة امتصاص المياه والعناصر الغذائية.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=7" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="seeds">
+            <a href="shopro.html?product-id=8" >
+            <img src="photo\pro6.jpg" alt="DELHAS CROP PROTECTOR">
+            <h3>DELHAS CROP PROTECTOR</h3>
+            <p>مبيد طبيعي لمكافحة الحشرات الضارة.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=8" class="btn">المزيد</a>
+        </div>
+
+        <div class="product-item" data-category="seeds">
+            <a href="shopro.html?product-id=9" >
+            <img src="photo\pro7.jpg" alt="DELHAS FLOWER ENHANCER">
+            <h3>DELHAS FLOWER ENHANCER</h3>
+            <p>محفز لنمو الأزهار وزيادة الإزهار.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=9" class="btn">المزيد</a>
+        </div>
+
+        
+        <div class="product-item" data-category="seeds">
+            <a href="shopro.html?product-id=10" >
+            <img src="photo\pro8.jpg" alt="DELHAS PREMIUM SOIL MIX">
+            <h3>DELHAS PREMIUM SOIL MIX</h3>
+            <p>خليط تربة مميز لتحسين جودة التربة.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=10" class="btn">المزيد</a>
+        </div>
+    
+        <div class="product-item" data-category="seeds">
+            <a href="shopro.html?product-id=11" >
+            <img src="photo\pro9.jpg" alt="DELHAS FAST GROW">
+            <h3>DELHAS FAST GROW</h3>
+            <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+            <p class="price">100 جنيه</p>
+            <a href="shopro.html?product-id=11" class="btn">المزيد</a>
+        </div>
+    
+    </section>
+
+
+<!-- الفوتر الإضافي -->
+<footer class="top-footer">
+    <div class="container">
+        <div class="footer-columns">
+<!-- عمود تصنيفات المنتجات -->
+<div class="footer-column">
+    <h3>تصنيفات المنتجات</h3>
+    <ul class="footer-links">
+        <li><a href="products.html" onclick="filterByCategory('all')">جميع المنتجات</a></li>
+        <li><a href="products.html" onclick="filterByCategory('fertilizers')">الأسمدة</a></li>
+        <li><a href="products.html" onclick="filterByCategory('soil-nutrients')">مغذيات التربة</a></li>
+        <li><a href="products.html" onclick="filterByCategory('pesticides')">منتجات مكافحة الآفات</a></li>
+        <li><a href="products.html" onclick="filterByCategory('seeds')">البذور الزراعية</a></li>
+        <li><a href="products.html" onclick="filterByCategory('organic')">المنتجات العضوية</a></li>
+    </ul>
+</div>
+
+
+            <!-- عمود القوائم الرئيسية وأيقونات التواصل -->
+            <div class="footer-column">
+                <h3>القوائم</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="about2.html">خدماتنا</a></li>
+                    <li><a href="conctus.html">اتصل بنا</a></li>
+                </ul>
+
+                <!-- أيقونات التواصل الاجتماعي -->
+                <div class="social-icons">
+                    <a href="https://wa.me/+2001030507680"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                    <a href="https://t.me/SI_D_EK"><i class="fa-brands fa-telegram fa-3x"></i></a>
+                    <a href="https://www.facebook.com/zezo.zdan.3"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/si_d_ek/?hl=ar"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+<!-- الفوتر -->
+<footer>
+    <div class="clickable">
+        <p>© 2024 Delhasbiotech جميع الحقوق محفوظة لشركة</p>
+    </div>
+</footer>
+
+<!-- JavaScript لتفعيل القائمة المنسدلة -->
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.navbar .menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript لـ Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    
+    <!-- تفعيل الـ Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.product-carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    
+</body>
+</html>
