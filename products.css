@@ -232,7 +232,7 @@ body {
 }
 
 .search-input {
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #ddd;
@@ -291,11 +291,83 @@ body {
     margin: 20px 0;
 }
 
+/* القائمة الرئيسية */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px;
+    /* زيادة حجم الزر */
+    font-size: 18px;
+    /* زيادة حجم النص */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* القائمة الفرعية */
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 90%;
+    /* تقليل المسافة بين القائمة الرئيسية والفرعية */
+    top: 0;
+    background-color: #a56d6d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #f1f1f1;
+}
 
 /* تخطيط الصفحة */
 .main-content {
     display: flex;
-    margin: 20px;
+    margin: 80px;
 }
 
 /* الشبكة: أربعة منتجات في كل صف */
@@ -365,7 +437,7 @@ body {
 
     /* تحسين البحث */
     .search-bar input[type="text"] {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -407,80 +479,6 @@ body {
         gap: 5px;
     }
 }
-
-/* القائمة الرئيسية */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 24px;
-    /* زيادة حجم الزر */
-    font-size: 18px;
-    /* زيادة حجم النص */
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* القائمة الفرعية */
-.dropdown-submenu {
-    position: relative;
-}
-
-.submenu-content {
-    display: none;
-    position: absolute;
-    left: 90%;
-    /* تقليل المسافة بين القائمة الرئيسية والفرعية */
-    top: 0;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-submenu:hover .submenu-content {
-    display: block;
-}
-
-.submenu-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.submenu-content a:hover {
-    background-color: #f1f1f1;
-}
-
 
 /* تحسينات على الهواتف الذكية */
 @media (max-width: 768px) {
