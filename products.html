@@ -1060,11 +1060,7 @@
                 }
             });
 
-
             const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-            filteredProducts.forEach((product, index) => {
-                product.style.display = 'none';
-            });
 
             // إخفاء جميع المنتجات
             filteredProducts.forEach((product) => {
@@ -1094,9 +1090,10 @@
         // دالة الانتقال إلى الصفحة التالية
         function nextPage() {
             const products = document.querySelectorAll('.product-item');
-            const filteredProducts = Array.from(products).filter(product =>
-                currentCategory === 'all' || product.getAttribute('data-category') === currentCategory
-            );
+            const filteredProducts = Array.from(products).filter(product => {
+                const productCategories = product.getAttribute('data-category').split(',').map(cat => cat.trim());
+                return currentCategory === 'all' || productCategories.includes(currentCategory);
+            });
             const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
             if (currentPage < totalPages) {
@@ -1117,6 +1114,7 @@
 
         // عرض الصفحة الأولى عند تحميل الصفحة
         displayProducts();
+
 
     </script>
 
