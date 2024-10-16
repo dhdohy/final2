@@ -8,7 +8,7 @@
 
 /* شريط التنبيه العلوي */
 .top-bar {
-    background-color: #ff5722;
+    background-color: #2b2321;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -18,9 +18,9 @@
 
 /* رأس الصفحة */
 .header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.219);
     padding: 20px 0;
-    border-bottom: 2px solid #ff4757;
+    border-bottom: 2px solid #302a2a;
 }
 
 .container {
@@ -44,11 +44,16 @@
 /* قائمة التنقل */
 .navbar ul {
     list-style: none;
+    
     display: flex;
 }
 
 .navbar ul li {
     margin-left: 15px;
+    background-color: #ff5722;
+    border-radius: 9px;
+
+
 }
 
 .header .navbar ul li a {
@@ -62,7 +67,7 @@
 }
 
 .header .navbar ul li a:hover {
-    background-color: #ff5722;
+    background-color: #25201e;
 }
 
 /* الزر الخاص بالقائمة المنسدلة */
@@ -273,6 +278,7 @@ body {
 @media (max-width: 768px) {
     .footer-columns {
         flex-direction: column;
+        gap: 10px;
     }
 
     .footer-column {
@@ -325,6 +331,7 @@ footer p {
     .navbar ul {
         display: none;
         flex-direction: column;
+        gap: 5px;
     }
 
     .menu-toggle {

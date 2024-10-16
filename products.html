@@ -28,7 +28,7 @@
             <div class="logo">
                 <a href="index.html">
                     <img src="logo.png" alt="Delhasbiotech Logo">
-                    <h1>Delhasbiotech</h1>
+                    <h1></h1>
                 </a>
             </div>
             <!-- زر القائمة المنسدلة -->
@@ -60,52 +60,48 @@
     <!-- القائمة الجانبية المحدثة - قائمة منسدلة أعلى المنتجات -->
     <div class="filter-bar">
         <div class="dropdown">
-            <button class="dropbtn">التصنيفات</button>
+            <button class="dropbtn" id="categoryButton">التصنيفات</button>
             <div class="dropdown-content">
                 <div class="dropdown-submenu">
-                    <a href="#" onclick="filterByCategory('all')">جميع المنتجات</a>
+                    <a href="#" onclick="filterByCategory('all', 'جميع المنتجات')">جميع المنتجات</a>
                 </div>
-
+    
                 <div class="dropdown-submenu">
-                    <a href="#" onclick="filterByCategory('agriculture')">اسمدة</a>
+                    <a href="#" onclick="filterByCategory('agriculture', 'اسمدة')">اسمدة</a>
                     <div class="submenu-content">
-                        <a href="#" onclick="filterByCategory('npk')">NPK</a>
-                        <a href="#" onclick="filterByCategory('nutrients2')">خاصة بالتربة</a>
-                        <a href="#" onclick="filterByCategory('nutrients3')">تجذير </a>
-                        <a href="#" onclick="filterByCategory('nutrients4')">المجموع الخضري </a>
-                        <a href="#" onclick="filterByCategory('nutrients5')"> للتزهير و العقد </a>
-                        <a href="#" onclick="filterByCategory('nutrients6')"> خاصة بالثمار</a>
-                        <a href="#" onclick="filterByCategory('nutrients7')"> خاصة بالملوحة </a>
-                        <a href="#" onclick="filterByCategory('nutrients8')"> وقائي وفيسيولوجي</a>
-                        <a href="#" onclick="filterByCategory('nutrients9')"> خاص بالبذور </a>
-                        <a href="#" onclick="filterByCategory('nutrients10')"> PH خافض لل </a>
-                        <a href="#" onclick="filterByCategory('nutrients11')"> مواد لاصقة وناشرة</a>
+                        <a href="#" onclick="filterByCategory('npk', 'NPK')">NPK</a>
+                        <a href="#" onclick="filterByCategory('nutrients2', 'خاصة بالتربة')">خاصة بالتربة</a>
+                        <a href="#" onclick="filterByCategory('nutrients3', 'تجذير')">تجذير</a>
+                        <a href="#" onclick="filterByCategory('nutrients4', 'المجموع الخضري')">المجموع الخضري</a>
+                        <a href="#" onclick="filterByCategory('nutrients5', 'للتزهير و العقد')">للتزهير و العقد</a>
+                        <a href="#" onclick="filterByCategory('nutrients6', 'خاصة بالثمار')">خاصة بالثمار</a>
+                        <a href="#" onclick="filterByCategory('nutrients7', 'خاصة بالملوحة')">خاصة بالملوحة</a>
+                        <a href="#" onclick="filterByCategory('nutrients8', 'وقائي وفيسيولوجي')">وقائي وفيسيولوجي</a>
+                        <a href="#" onclick="filterByCategory('nutrients9', 'خاص بالبذور')">خاص بالبذور</a>
+                        <a href="#" onclick="filterByCategory('nutrients10', 'PH خافض لل')">PH خافض لل</a>
+                        <a href="#" onclick="filterByCategory('nutrients11', 'مواد لاصقة وناشرة')">مواد لاصقة وناشرة</a>
                     </div>
                 </div>
-
+    
                 <div class="dropdown-submenu">
-                    <a href="#" onclick="filterByCategory('new')">جديد</a>
+                    <a href="#" onclick="filterByCategory('new', 'جديد')">جديد</a>
+                </div>
+    
+                <div class="dropdown-submenu">
+                    <a href="#" onclick="filterByCategory('pesticides', 'المبيدات')">المبيدات</a>
                     <div class="submenu-content">
+                        <a href="#" onclick="filterByCategory('insecticides', 'مبيدات الحشرات')">مبيدات الحشرات</a>
+                        <a href="#" onclick="filterByCategory('herbicides', 'مبيدات الأعشاب')">مبيدات الأعشاب</a>
                     </div>
                 </div>
-
+    
                 <div class="dropdown-submenu">
-                    <a href="#" onclick="filterByCategory('pesticides')">المبيدات</a>
-                    <div class="submenu-content">
-                        <a href="#" onclick="filterByCategory('insecticides')">مبيدات الحشرات</a>
-                        <a href="#" onclick="filterByCategory('herbicides')">مبيدات الأعشاب</a>
-                    </div>
-                </div>
-
-                <div class="dropdown-submenu">
-                </div>
-
-                <div class="dropdown-submenu">
-                    <a href="#" onclick="filterByCategory('seeds')">البذور</a>
+                    <a href="#" onclick="filterByCategory('seeds', 'البذور')">البذور</a>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     <!-- شبكة المنتجات -->
@@ -442,7 +438,7 @@
                 <a href="shopro.html?product-id=28" class="btn">المزيد</a>
         </div>
 
-        
+
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=28">
                 <img src="0/MIXO LIQUID.jpg" alt="DELHAS MIXO LIQUID">
@@ -515,7 +511,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4,nutrients3">
             <a href="shopro.html?product-id=35">
-                <img src="0/1 (35).jpg" alt="DELHAS HUMIC ACID">
+                <img src="0\HUMIC ACID.jpg" alt="DELHAS HUMIC ACID">
                 <h3> DELHAS HUMIC ACID</h3>
                 <h3>دلهاس هيوميك اسيد </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
@@ -525,7 +521,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients8">
             <a href="shopro.html?product-id=36">
-                <img src="0/1 (36).jpg" alt="DELHAS POTASSIUM PHOSPHITE">
+                <img src="0\POTASSIUM PHOSPHITE.jpg" alt="DELHAS POTASSIUM PHOSPHITE">
                 <h3> DELHAS POTASSIUM PHOSPHITE</h3>
                 <h3>دلهاس بوتاسيوم فوسفيت </h3>
                 <p>تحجيم ثمار ووقائي وفيسيولوجي</p>
@@ -535,7 +531,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients8">
             <a href="shopro.html?product-id=37">
-                <img src="0/1 (37).jpg" alt="DELHAS POTASSIUM CITRATE">
+                <img src="0\POTASSIUM CITRATE.jpg" alt="DELHAS POTASSIUM CITRATE">
                 <h3> DELHAS POTASSIUM CITRATE</h3>
                 <h3>دلهاس البوتاسيوم سترات </h3>
                 <p>تحجيم ثمار ووقائي وفيسيولوجي</p>
@@ -545,7 +541,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=38">
-                <img src="0/1 (38).jpg" alt="DELHAS HUMIC ACTION">
+                <img src="0\HUMIC ACTION.jpg" alt="DELHAS HUMIC ACTION">
                 <h3> DELHAS HUMIC ACTION</h3>
                 <h3>دلهاس هيوميك اكشن </h3>
                 <p>تربة تجذير ومجموع خضري</p>
@@ -553,10 +549,9 @@
                 <a href="shopro.html?product-id=38" class="btn">المزيد</a>
         </div>
 
-
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=39">
-                <img src="0/1 (39).jpg" alt="DELHAS FULVIC MIX">
+                <img src="0\FULVIC MIX.jpg" alt="DELHAS FULVIC MIX">
                 <h3> DELHAS FULVIC MIX</h3>
                 <h3>دلهاس فولفيك ميكس </h3>
                 <p>تربة تجذير مجموع خضري</p>
@@ -566,7 +561,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=40">
-                <img src="0/1 (40).jpg" alt="DELHAS FULVIC PLUS">
+                <img src="0\FULVIC PLUS.jpg" alt="DELHAS FULVIC PLUS">
                 <h3> DELHAS FULVIC PLUS</h3>
                 <h3>دلهاس فولفيك بلس</h3>
                 <p>تربة وتجذير ومجموع خضري</p>
@@ -576,7 +571,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=41">
-                <img src="0/1 (41).jpg" alt="DELHAS HUMICO EXTRA">
+                <img src="0\HUMICO EXTRA.jpg" alt="DELHAS HUMICO EXTRA">
                 <h3> DELHAS HUMICO EXTRA</h3>
                 <h3>دلهاس هيومكو اكسترا </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
@@ -586,7 +581,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=42">
-                <img src="0/1 (42).jpg" alt="DELHAS HUMIC ROOTS">
+                <img src="0\HUMIC ROOTS.jpg" alt="DELHAS HUMIC ROOTS">
                 <h3> DELHAS HUMIC ROOTS</h3>
                 <h3>دلهاس هيوميك روتس </h3>
                 <p>تربة تجذير ومجموع خضري</p>
@@ -594,10 +589,9 @@
                 <a href="shopro.html?product-id=42" class="btn">المزيد</a>
         </div>
 
-
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
             <a href="shopro.html?product-id=43">
-                <img src="0/1 (43).jpg" alt="DELHAS POTASSIUM HUMATE">
+                <img src="0\POTASSIUM HUMATE.jpg" alt="DELHAS POTASSIUM HUMATE">
                 <h3> DELHAS POTASSIUM HUMATE</h3>
                 <h3>دلهاس بوتاسيوم هيومات </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
@@ -605,9 +599,19 @@
                 <a href="shopro.html?product-id=43" class="btn">المزيد</a>
         </div>
 
+        <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
+            <a href="shopro.html?product-id=49">
+                <img src="0\AMINO KAT PLUS.jpg" alt="DELHAS AMINO KAT PLUS">
+                <h3> DELHAS AMINO KAT PLUS</h3>
+                <h3>دلهاس امينو كات بلس </h3>
+                <p>مجموع خضري وتزهير وعقد</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=49" class="btn">المزيد</a>
+        </div>
+
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5,">
             <a href="shopro.html?product-id=44">
-                <img src="0/1 (44).jpg" alt="DELHAS AMINO A LIQUID">
+                <img src="0/AMINO A LIQUID.jpg" alt="DELHAS AMINO A LIQUID">
                 <h3> DELHAS AMINO A LIQUID</h3>
                 <h3>دلهاس امينو اي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -617,7 +621,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=45">
-                <img src="0/1 (45).jpg" alt="DELHAS AMINO B LIQUID">
+                <img src="0/AMINO b LIQUID.jpg" alt="DELHAS AMINO B LIQUID">
                 <h3> DELHAS AMINO B LIQUID</h3>
                 <h3>دلهاس امينو بي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -627,7 +631,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=46">
-                <img src="0/1 (46).jpg" alt="DELHAS AMINO MIX A LIQUID">
+                <img src="0\AMINO MIX a LIQUID.jpg" alt="DELHAS AMINO MIX A LIQUID">
                 <h3> DELHAS AMINO MIX A LIQUID</h3>
                 <h3>دلهاس امينو ميكس اي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -637,7 +641,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=47">
-                <img src="0/1 (47).jpg" alt="DELHAS AMINO MIX B LIQUID">
+                <img src="0\AMINO MIX B LIQUID.jpg" alt="DELHAS AMINO MIX B LIQUID">
                 <h3> DELHAS AMINO MIX B LIQUID</h3>
                 <h3>دلهاس امينو ميكس بي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -647,7 +651,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=48">
-                <img src="0/1 (48).jpg" alt="DELHAS AMINO MIX C LIQUID">
+                <img src="0\AMINO MIX c LIQUID.jpg" alt="DELHAS AMINO MIX C LIQUID">
                 <h3> DELHAS AMINO MIX C LIQUID</h3>
                 <h3>دلهاس امينو ميكس سي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -656,18 +660,8 @@
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=49">
-                <img src="0/1 (49).jpg" alt="DELHAS AMINO KAT PLUS">
-                <h3> DELHAS AMINO KAT PLUS</h3>
-                <h3>دلهاس امينو كات بلس </h3>
-                <p>مجموع خضري وتزهير وعقد</p>
-                <p class="price"> </p>
-                <a href="shopro.html?product-id=49" class="btn">المزيد</a>
-        </div>
-
-        <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=50">
-                <img src="0/1 (50).jpg" alt="DELHAS AMINO SPECTRO">
+                <img src="0\AMINO SPECTRO.jpg" alt="DELHAS AMINO SPECTRO">
                 <h3> DELHAS AMINO SPECTRO</h3>
                 <h3>دلهاس امينو سبكترو </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -677,7 +671,7 @@
 
         <div class="product-item" data-category="npk,agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=51">
-                <img src="0/1 (51).jpg" alt="DELHAS AMINO NPK 8-10-5">
+                <img src="0\AMINO NPK 8-10-5.jpg" alt="DELHAS AMINO NPK 8-10-5">
                 <h3> DELHAS AMINO NPK 8-10-5</h3>
                 <h3>دلهاس امينو ان بي كي 8-10-5 </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -687,7 +681,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=52">
-                <img src="0/1 (52).jpg" alt="DELHAS BIOMIX A LIQUID">
+                <img src="0\BIOMIX A LIQUID.jpg" alt="DELHAS BIOMIX A LIQUID">
                 <h3> DELHAS BIOMIX A LIQUID</h3>
                 <h3>دلهاس بيوميكس اي ليكويد </h3>
                 <p>مستخلص طبيعي لتسريع نمو النبات.</p>
@@ -697,7 +691,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=53">
-                <img src="0/1 (53).jpg" alt="DELHAS BIOMIX B LIQUID">
+                <img src="0\BIOMIX b LIQUID.jpg" alt="DELHAS BIOMIX B LIQUID">
                 <h3> DELHAS BIOMIX B LIQUID</h3>
                 <h3>دلهاس بيوميكس بي ليكويد </h3>
                 <p> مجموع خضري وتزهير وعقد</p>
@@ -707,7 +701,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=54">
-                <img src="0/1 (54).jpg" alt="DELHAS BIOMIX C LIQUID">
+                <img src="0\BIOMIX c LIQUID.jpg" alt="DELHAS BIOMIX C LIQUID">
                 <h3> DELHAS BIOMIX C LIQUID</h3>
                 <h3>دلهاس بيوميكس سي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -717,7 +711,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=55">
-                <img src="0/1 (55).jpg" alt="DELHAS BIOMIX D LIQUID">
+                <img src="0\BIOMIX d LIQUID.jpg" alt="DELHAS BIOMIX D LIQUID">
                 <h3> DELHAS BIOMIX D LIQUID</h3>
                 <h3>دلهاس بيوميكس دي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -727,7 +721,7 @@
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=56">
-                <img src="0/1 (56).jpg" alt="DELHAS BIOMIX E LIQUID">
+                <img src="0\BIOMIX e LIQUID.jpg" alt="DELHAS BIOMIX E LIQUID">
                 <h3> DELHAS BIOMIX E LIQUID</h3>
                 <h3>دلهاس بيوميكس يي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
@@ -1079,23 +1073,32 @@
             var menu = document.querySelector('.navbar .menu');
             menu.classList.toggle('active');
         }
+
     </script>
 
 
     <!-- JavaScript لتصفية المنتجات -->
     <script>
-        // دالة البحث عن المنتجات
+
+        function filterByCategory(category, categoryName) {
+            // تغيير النص في الزر إلى اسم الفئة المختارة
+            document.getElementById('categoryButton').textContent = categoryName;
+
+            // هنا يتم تحديث الفئة الحالية وتصفيتها
+            currentCategory = category; // تحديث الفئة الحالية
+            currentPage = 1; // إعادة ضبط الصفحة الحالية
+            displayProducts(); // عرض المنتجات بعد التصفية
+        }
+
         // دالة البحث عن المنتجات
         function searchProducts() {
             var input = document.getElementById('search-input').value.toLowerCase();
             var products = document.getElementsByClassName('product-item');
 
             for (var i = 0; i < products.length; i++) {
-                // الحصول على الأسماء باللغة الإنجليزية والعربية
                 var productNameEnglish = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                var productNameArabic = products[i].getElementsByTagName('h3')[1].innerText.toLowerCase(); // الاسم باللغة العربية
+                var productNameArabic = products[i].getElementsByTagName('h3')[1].innerText.toLowerCase();
 
-                // التحقق مما إذا كان الإدخال يتطابق مع أي من الأسماء
                 if (productNameEnglish.includes(input) || productNameArabic.includes(input)) {
                     products[i].style.display = 'block';
                 } else {
@@ -1104,19 +1107,19 @@
             }
         }
 
-
         function openProduct(imagePath, productId) {
-            // تخزين مسار الصورة في localStorage
-            localStorage.setItem('productImage', imagePath);
-            localStorage.setItem('productId', productId);
+            // تخزين مسار الصورة في sessionStorage
+            sessionStorage.setItem('productImage', imagePath);
+            sessionStorage.setItem('productId', productId);
+
+            // تخزين الصفحة الحالية والفئة الحالية في sessionStorage
+            sessionStorage.setItem('currentPage', currentPage);
+            sessionStorage.setItem('currentCategory', currentCategory);
 
             // الانتقال إلى صفحة مميزات المنتج
             window.location.href = 'shopro.html';
-
-            function saveImageToLocalStorage(imagePath) {
-                localStorage.setItem('productImage', imagePath);
-            }
         }
+
         const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
         let currentPage = 1;
         let currentCategory = 'all'; // الفئة الحالية
@@ -1130,15 +1133,21 @@
 
         // دالة عرض المنتجات وتصفيتها حسب الفئة والصفحة
         function displayProducts() {
+            // استعادة الصفحة والفئة المخزنة إذا كانت موجودة
+            if (sessionStorage.getItem('currentPage')) {
+                currentPage = parseInt(sessionStorage.getItem('currentPage'));
+            }
+
+            if (sessionStorage.getItem('currentCategory')) {
+                currentCategory = sessionStorage.getItem('currentCategory');
+            }
+
             const products = document.querySelectorAll('.product-item');
             let filteredProducts = [];
 
             // تصفية المنتجات حسب الفئة المختارة
             products.forEach((product) => {
-                // تحويل الفئات الخاصة بالمنتج إلى مصفوفة باستخدام الفواصل
                 const productCategories = product.getAttribute('data-category').split(',').map(cat => cat.trim());
-
-                // التحقق إذا كانت الفئة المختارة تتواجد ضمن الفئات الخاصة بالمنتج
                 if (currentCategory === 'all' || productCategories.includes(currentCategory)) {
                     filteredProducts.push(product);
                 } else {
@@ -1199,8 +1208,19 @@
         }
 
         // عرض الصفحة الأولى عند تحميل الصفحة
-        displayProducts();
+        document.addEventListener('DOMContentLoaded', () => {
+            // استرجاع الصفحة والفئة من sessionStorage
+            if (sessionStorage.getItem('currentPage')) {
+                currentPage = parseInt(sessionStorage.getItem('currentPage'));
+                sessionStorage.removeItem('currentPage'); // حذف القيمة بعد استرجاعها
+            }
+            if (sessionStorage.getItem('currentCategory')) {
+                currentCategory = sessionStorage.getItem('currentCategory');
+                sessionStorage.removeItem('currentCategory'); // حذف القيمة بعد استرجاعها
+            }
 
+            displayProducts();
+        });
     </script>
 </body>
 
