@@ -68,20 +68,18 @@
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px 90px;
-    /* زيادة حجم الزر */
-    font-size: 22px;
-    /* زيادة حجم النص */
+    padding: 16px 150px; /* زيادة حجم الزر */
+    font-size: 22px;  /* زيادة حجم النص */
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 200px;
+    min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -247,12 +245,12 @@
 }
 
 .navigation button {
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 5px 10px;
+    margin: 3px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -266,7 +264,7 @@
     /* تحسين عرض الشبكة الخاصة بالمنتجات */
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 3px;
+        gap: 0px;
     }
 }
 

@@ -57,7 +57,7 @@
         </form>
     </div>
 
-    <!-- القائمة الجانبية المحدثة - قائمة منسدلة أعلى المنتجات -->
+    <!-- - قائمة منسدلة أعلى المنتجات -->
     <div class="filter-bar">
         <div class="dropdown">
             <button class="dropbtn" id="categoryButton">التصنيفات</button>
@@ -65,7 +65,7 @@
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('all', 'جميع المنتجات')">جميع المنتجات</a>
                 </div>
-    
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('agriculture', 'اسمدة')">اسمدة</a>
                     <div class="submenu-content">
@@ -82,11 +82,11 @@
                         <a href="#" onclick="filterByCategory('nutrients11', 'مواد لاصقة وناشرة')">مواد لاصقة وناشرة</a>
                     </div>
                 </div>
-    
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('new', 'جديد')">جديد</a>
                 </div>
-    
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('pesticides', 'المبيدات')">المبيدات</a>
                     <div class="submenu-content">
@@ -94,252 +94,251 @@
                         <a href="#" onclick="filterByCategory('herbicides', 'مبيدات الأعشاب')">مبيدات الأعشاب</a>
                     </div>
                 </div>
-    
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('seeds', 'البذور')">البذور</a>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 
     <!-- شبكة المنتجات -->
     <div class="product-grid" id="product-grid">
         <!-- المنتجات هنا -->
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=1">
+            <a href="shopro.html?product-id=1" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\NPK FERT.jpg" alt=" DELHAS NPK FERT">
                 <h3> DELHAS NPK FERT</h3>
                 <h3> دلهاس ان بي كي فيرت</h3>
                 <p> NPK </p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=1" class="btn"
-                    onclick="saveImageToLocalStorage('photo/123 (6).jpg')">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=2">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/MOREOVER NPK.jpg" alt=" DELHAS MOREOVER NPK">
                 <h3> DELHAS MOREOVER NPK</h3>
                 <h3> دلهاس مور اوفر ان بي كي</h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=2" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=3">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SOLUTION NPK.jpg" alt=" DELHAS SOLUTION NPK">
                 <h3> DELHAS SOLUTION NPK</h3>
                 <h3> دلهاس سيلوشن ان بي كي </h3>
                 <p>NPK</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=3" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=4">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\EXTRA NPK.jpg" alt="DELHAS EXTRA NPK">
                 <h3>DELHAS EXTRA NPK</h3>
                 <h3> دلهاس اكسترا ان بي كي </h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=4" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=5">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\IMPACT NPK.jpg" alt=" DELHAS IMPACT NPK">
                 <h3> DELHAS IMPACT NPK</h3>
                 <h3> دلهاس امباكت ان بي كي</h3>
                 <p>NPK</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=5" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=6">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/PLUS NPK.jpg" alt="DELHAS PLUS NPK">
                 <h3>DELHAS PLUS NPK</h3>
                 <h3>دلهاس بلس ان بي كي </h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=6" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=6">
+            <a href="shopro.html?product-id=2" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\7-7-7.jpg" alt="DELHAS PLUS NPK">
                 <h3>DELHAS NPK 7-7-7</h3>
                 <h3>دلهاس ان بي كي 7-7-7</h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=6" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=7">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\RAW SAF.jpg" alt="DELHAS RAW-SAF ">
                 <h3>DELHAS RAW-SAF </h3>
                 <h3>دلهاس رو ساف </h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=7" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=8" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture">
-            <a href="shopro.html?product-id=8">
+            <a href="javascript:void(0);" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\FOL FAST NPK.jpg" alt="DELHAS FOL FAST NPK">
                 <h3>DELHAS FOL FAST NPK </h3>
                 <h3>دلهاس فول فاست ان بي كي </h3>
                 <p>NPK</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=8" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="nutrients4,nutrients2">
-            <a href="shopro.html?product-id=9">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/SPECIAL MAGNESIUM.jpg" alt="DELHAS SPECIAL MAGNESIUM">
                 <h3>DELHAS SPECIAL MAGNESIUM</h3>
                 <h3>دلهاس سبيشيال ماغنسيوم</h3>
                 <p>المجموع الخضري وتربة</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=9" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="nutrients2,nutrients4">
-            <a href="shopro.html?product-id=10">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/Special Calcium+ME.jpg" alt="Delhas Special Calcium+ME">
                 <h3>Delhas Special Calcium+ME</h3>
                 <h3>دلهاس سبيشيال كالسيوم </h3>
                 <p>خاص بالتربة ومجموع خضري</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=10" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,nutrients2,nutrients6">
-            <a href="shopro.html?product-id=11">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SPECIAL 9-5-40.jpg" alt="DELHAS SPECIAL 9-5-40">
                 <h3>DELHAS SPECIAL 9-5-40</h3>
                 <h3>دلهاس سبيشيال 9-5-40</h3>
                 <p>NPK تحجيم الثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=11" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
         <div class="product-item" data-category="agriculture,nutrients2,nutrients5">
-            <a href="shopro.html?product-id=12">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\Special CALMAG+B.jpg" alt=" Delhas Special CALMAG+B">
                 <h3> Delhas Special CALMAG+B</h3>
                 <h3>دلهاس سبيشيال كالماج</h3>
                 <p> تربة وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=12" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients6">
-            <a href="shopro.html?product-id=13">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\Potassium Thiosulfate.jpg" alt=" Delhas Potassium Thiosulfate">
                 <h3> Delhas Potassium Thiosulfate</h3>
                 <h3>دلهاس بوتاسيوم ثيوكبريتات </h3>
                 <p>تربة وتحجيم الثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=13" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=15">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SHOOT NPK+AA.jpg" alt=" Delhas Shoot NPK ">
                 <h3> Delhas Shoot NPK +AA </h3>
                 <h3>دلهاس شوت ان بي كي </h3>
                 <p>تجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=15" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=16">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SHOOT NPK +SE.jpg" alt=" Delhas Shoot NPK +SE">
                 <h3> DELHAS SHOOT NPK +SE</h3>
                 <h3>دلهاس شوت ان بي كي + اس يي</h3>
                 <p>تجذير ومجوع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=16" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=17">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\CALBOR.jpg" alt="DELHAS CALBOR">
                 <h3> DELHAS CALBOR</h3>
                 <h3>دلهاس كالبور </h3>
                 <p>تزهير وعقد وتحجيم وقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=17" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,NPK,nutrients5,nutrients8">
-            <a href="shopro.html?product-id=87">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\TECT NPK 3-27-18+TE.jpg" alt="DELHAS SILICONE">
                 <h3>DELHAS TECT NPK 3-27-18+TE</h3>
                 <h3>دلهاس تيك 3-27-18+تي يي</h3>
                 <p>NPK وتزهير وعقد وقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=87" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="nutrients2,nutrients6,npk,nutrients8">
-            <a href="shopro.html?product-id=18">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SPECIAL PK 20-17+CU.jpg" alt=" DELHAS SPECIAL PK 20-17+CU">
                 <h3> DELHAS SPECIAL PK 20-17+CU</h3>
                 <h3>دلهاس سبيشيال بي كي </h3>
                 <p>تربة وتحجيم ثمار NPK وقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=18" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,,nutrients5,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=19">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\KUTSIM.jpg" alt="DELHAS KUTSIM">
                 <h3> DELHAS KUTSIM</h3>
                 <h3>دلهاس كاتسيم </h3>
                 <p>NPK تزهير وعقد وتحجيم ثمار وقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=19" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,NPK,nutrients5,nutrients6">
-            <a href="shopro.html?product-id=86">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/SPECTRO PLUS.jpg" alt="DELHAS SILICONE">
                 <h3>DELHAS SPECTRO PLUS (POWDER)</h3>
                 <h3>دلهاس سبيكترو بلس باودر</h3>
                 <p>NPK وزهير وعقد وتحجيم ثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=86" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 2)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=20">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\METHIONINE COMBI.jpg" alt="DELHAS METHIONINE COM BI">
                 <h3> DELHAS METHIONINE COMBI</h3>
                 <h3>دلهاس ميثيونين كومبي </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=20" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 2)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4">
-            <a href="shopro.html?product-id=21">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\IRON EDTA.jpg" alt="DELHAS IRON EDTA">
                 <h3>DELHAS IRON EDTA</h3>
                 <h3>دلهاس ايرون ايديتا </h3>
                 <p>تربة ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=21" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=4" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 2)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients4">
-            <a href="shopro.html?product-id=21">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\GLYMETH.jpg" alt="DELHAS IRON EDTA">
                 <h3>DELHAS GLYMETH </h3>
                 <h3>دلهاس جلايمث </h3>
@@ -349,87 +348,87 @@
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients9">
-            <a href="shopro.html?product-id=21">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/exstra zinco.jpg" alt="DELHAS IRON EDTA">
                 <h3>DELHAS EXTRA ZINCO </h3>
                 <h3>دلهاس اكسترا زنكو </h3>
                 <p> تزهير وعقد ووقائي وفيسيولوجي </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=21" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients2">
-            <a href="shopro.html?product-id=21">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/potash k.jpg" alt="DELHAS IRON EDTA">
                 <h3>DELHAS POTASH K </h3>
                 <h3>دلهاس بوتاش كي </h3>
                 <p>تحجيم ثمار وتربة</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=21" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients8">
-            <a href="shopro.html?product-id=22">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\IRON ORTHO.jpg" alt="DELHAS IRON ORTHO">
                 <h3>DELHAS IRON ORTHO</h3>
                 <h3>دلهاس ايرون اورثو </h3>
                 <p>تزهير وعقد ووقائي وفيسيولوجي </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=2" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4,nutrients5,nutrients8">
-            <a href="shopro.html?product-id=23">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\zinc.jpg" alt="DELHAS ZINC">
                 <h3> DELHAS ZINC</h3>
                 <h3>دلهاس زنك </h3>
                 <p>تربة مجموع خضري تزهير وعقد ووق وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=23" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4,nutrients6">
-            <a href="shopro.html?product-id=24">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\MANGANESE.jpg" alt="DELHAS MANGANESE">
                 <h3> DELHAS MANGANESE</h3>
                 <h3>دلهاس منغنيز </h3>
                 <p>ترية ومجموع خضري وتحجيم ثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=24" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients8,nutrients2,nutrients5,nutrients6">
-            <a href="shopro.html?product-id=25">
+            <a href="shopro.html?product-id=25" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/BORON.jpg" alt="DELHAS BORON">
                 <h3> DELHAS BORON</h3>
                 <h3>دلهاس بورون </h3>
                 <p>تربة وتزهير وعقد وتحجيم ثمار ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=25" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4,nutrients8">
-            <a href="shopro.html?product-id=26">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\COPPER PLUS.jpg" alt="DELHAS COPPER PLUS">
                 <h3> DELHAS COPPER PLUS</h3>
                 <h3>دلهاس كوبر بلس </h3>
                 <p>تربة ومجموع خضري ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=26" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=27">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\MOBOR.jpg" alt="DELHAS  MOBOR">
                 <h3> DELHAS MOBOR</h3>
                 <h3>دلهاس موبور </h3>
                 <p>مجموع خضري وتحجيم ثمار ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=27" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=28">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\MIXO POWDER.jpg" alt="DELHAS MIXO POWDER">
                 <h3> DELHAS MIXO POWDER</h3>
                 <h3>دلهاس ميكسو باودر </h3>
@@ -440,619 +439,619 @@
 
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=28">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/MIXO LIQUID.jpg" alt="DELHAS MIXO LIQUID">
                 <h3> DELHAS MIXO LIQUID</h3>
                 <h3>دلهاس ميكسو ليكويد </h3>
                 <p> مجموع خخضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=28" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients5,nutrients8">
-            <a href="shopro.html?product-id=29">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BORON LIQUID.jpg" alt="DELHAS BORON LIQUID">
                 <h3> DELHAS BORON LIQUID</h3>
                 <h3>دلهاس بورون ليكويد </h3>
                 <p>تحجيم ثمار وتزهير وعقد ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=29" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients6">
-            <a href="shopro.html?product-id=30">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO FLORZONE.jpg" alt="DELHAS AMINO FLORZONE">
                 <h3> DELHAS AMINO FLORZONE</h3>
                 <h3>دلهاس أمينو فلورزون </h3>
                 <p>تزهير وعقد وتحجيم ثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=30" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4">
-            <a href="shopro.html?product-id=31">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO KAT.jpg" alt="DELHAS AMINO KAT">
                 <h3> DELHAS AMINO KAT</h3>
                 <h3>دلهاس امينو كات </h3>
                 <p>مجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=31" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4">
-            <a href="shopro.html?product-id=32">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\full a.jpg" alt="DELHAS FULL A">
                 <h3> DELHAS FULL A</h3>
                 <h3>دلهاس فول اي </h3>
                 <p>تربة ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=32" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients7,nutrients3">
-            <a href="shopro.html?product-id=33">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\LIGNO MIX.jpg" alt="DELHAS LIGNO MIX">
                 <h3> DELHAS LIGNO MIX</h3>
-                <h3>دلهاس لينجو ميكس </h3>
+                <h3>دلهاس ليجنو ميكس </h3>
                 <p>تربة وتجذير وملوحة</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=33" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=34">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\DOGRU HUMIK.jpg" alt="DELHAS MANGANESE">
                 <h3> DELHAS DOGRU HUMIK</h3>
                 <h3>دلهاس دوجرو هيوميك </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=34" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients4,nutrients3">
-            <a href="shopro.html?product-id=35">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\HUMIC ACID.jpg" alt="DELHAS HUMIC ACID">
                 <h3> DELHAS HUMIC ACID</h3>
                 <h3>دلهاس هيوميك اسيد </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=35" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=36">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\POTASSIUM PHOSPHITE.jpg" alt="DELHAS POTASSIUM PHOSPHITE">
                 <h3> DELHAS POTASSIUM PHOSPHITE</h3>
                 <h3>دلهاس بوتاسيوم فوسفيت </h3>
                 <p>تحجيم ثمار ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=36" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=37">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\POTASSIUM CITRATE.jpg" alt="DELHAS POTASSIUM CITRATE">
                 <h3> DELHAS POTASSIUM CITRATE</h3>
                 <h3>دلهاس البوتاسيوم سترات </h3>
                 <p>تحجيم ثمار ووقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=37" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=38">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\HUMIC ACTION.jpg" alt="DELHAS HUMIC ACTION">
                 <h3> DELHAS HUMIC ACTION</h3>
                 <h3>دلهاس هيوميك اكشن </h3>
                 <p>تربة تجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=38" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=39">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\FULVIC MIX.jpg" alt="DELHAS FULVIC MIX">
                 <h3> DELHAS FULVIC MIX</h3>
                 <h3>دلهاس فولفيك ميكس </h3>
                 <p>تربة تجذير مجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=39" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=40">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\FULVIC PLUS.jpg" alt="DELHAS FULVIC PLUS">
                 <h3> DELHAS FULVIC PLUS</h3>
                 <h3>دلهاس فولفيك بلس</h3>
                 <p>تربة وتجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=40" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=41">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\HUMICO EXTRA.jpg" alt="DELHAS HUMICO EXTRA">
                 <h3> DELHAS HUMICO EXTRA</h3>
                 <h3>دلهاس هيومكو اكسترا </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=41" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=42">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\HUMIC ROOTS.jpg" alt="DELHAS HUMIC ROOTS">
                 <h3> DELHAS HUMIC ROOTS</h3>
                 <h3>دلهاس هيوميك روتس </h3>
                 <p>تربة تجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=42" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients4">
-            <a href="shopro.html?product-id=43">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\POTASSIUM HUMATE.jpg" alt="DELHAS POTASSIUM HUMATE">
                 <h3> DELHAS POTASSIUM HUMATE</h3>
                 <h3>دلهاس بوتاسيوم هيومات </h3>
                 <p>تربة وتجذير ومجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=43" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=49">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO KAT PLUS.jpg" alt="DELHAS AMINO KAT PLUS">
                 <h3> DELHAS AMINO KAT PLUS</h3>
                 <h3>دلهاس امينو كات بلس </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=49" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5,">
-            <a href="shopro.html?product-id=44">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/AMINO A LIQUID.jpg" alt="DELHAS AMINO A LIQUID">
                 <h3> DELHAS AMINO A LIQUID</h3>
                 <h3>دلهاس امينو اي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=44" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=45">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/AMINO b LIQUID.jpg" alt="DELHAS AMINO B LIQUID">
                 <h3> DELHAS AMINO B LIQUID</h3>
                 <h3>دلهاس امينو بي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=45" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=46">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO MIX a LIQUID.jpg" alt="DELHAS AMINO MIX A LIQUID">
                 <h3> DELHAS AMINO MIX A LIQUID</h3>
                 <h3>دلهاس امينو ميكس اي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=46" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=47">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO MIX B LIQUID.jpg" alt="DELHAS AMINO MIX B LIQUID">
                 <h3> DELHAS AMINO MIX B LIQUID</h3>
                 <h3>دلهاس امينو ميكس بي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=47" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=48">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO MIX c LIQUID.jpg" alt="DELHAS AMINO MIX C LIQUID">
                 <h3> DELHAS AMINO MIX C LIQUID</h3>
                 <h3>دلهاس امينو ميكس سي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=48" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=50">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO SPECTRO.jpg" alt="DELHAS AMINO SPECTRO">
                 <h3> DELHAS AMINO SPECTRO</h3>
                 <h3>دلهاس امينو سبكترو </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=50" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=51">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO NPK 8-10-5.jpg" alt="DELHAS AMINO NPK 8-10-5">
                 <h3> DELHAS AMINO NPK 8-10-5</h3>
                 <h3>دلهاس امينو ان بي كي 8-10-5 </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=51" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=52">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX A LIQUID.jpg" alt="DELHAS BIOMIX A LIQUID">
-                <h3> DELHAS BIOMIX A LIQUID</h3>
-                <h3>دلهاس بيوميكس اي ليكويد </h3>
-                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
-                <p class="price"> </p>
-                <a href="shopro.html?product-id=52" class="btn">المزيد</a>
+            <h3> DELHAS BIOMIX A LIQUID</h3>
+            <h3>دلهاس بيوميكس اي ليكويد </h3>
+            <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+            <p class="price"> </p>
+            <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=53">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX b LIQUID.jpg" alt="DELHAS BIOMIX B LIQUID">
                 <h3> DELHAS BIOMIX B LIQUID</h3>
                 <h3>دلهاس بيوميكس بي ليكويد </h3>
                 <p> مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=53" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=54">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX c LIQUID.jpg" alt="DELHAS BIOMIX C LIQUID">
                 <h3> DELHAS BIOMIX C LIQUID</h3>
                 <h3>دلهاس بيوميكس سي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=54" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=55">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX d LIQUID.jpg" alt="DELHAS BIOMIX D LIQUID">
                 <h3> DELHAS BIOMIX D LIQUID</h3>
                 <h3>دلهاس بيوميكس دي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=55" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=56">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX e LIQUID.jpg" alt="DELHAS BIOMIX E LIQUID">
                 <h3> DELHAS BIOMIX E LIQUID</h3>
                 <h3>دلهاس بيوميكس يي ليكويد </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=56" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients4">
-            <a href="shopro.html?product-id=57">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\ALGA SITOKIN MIX.jpg" alt="DELHAS ALGA SITOKIN MIX">
                 <h3> DELHAS ALGA SITOKIN MIX</h3>
                 <h3>دلهاس ألجا سيتوكين ميكس </h3>
                 <p>مجموع خضري</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=57" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3">
-            <a href="shopro.html?product-id=58">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\VEGAPLUS.jpg" alt=" DELHAS VEGAPLUS">
                 <h3> DELHAS VEGAPLUS</h3>
                 <h3>دلهاس فيغا بلس </h3>
                 <p>تربة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=58" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3">
-            <a href="shopro.html?product-id=59">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\ORGANO K.jpg" alt="DELHAS ORGANO K">
                 <h3> DELHAS ORGANO K</h3>
                 <h3>دلهاس أورجانو كي </h3>
                 <p>تربة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=59" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
-        
+
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3">
-            <a href="shopro.html?product-id=59">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\ORGANO MIX.jpg" alt="DELHAS ORGANO K">
                 <h3> DELHAS ORGANO MIX</h3>
                 <h3>دلهاس أورجانو ميكس </h3>
                 <p>تربة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=59" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3">
-            <a href="shopro.html?product-id=59">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\ORGANIC NITROGEN.jpg" alt="DELHAS ORGANO K">
                 <h3> DELHAS ORGANIC NITROGEN</h3>
-                <h3>دلهاس أورجانك نيتروجين  </h3>
+                <h3>دلهاس أورجانك نيتروجين </h3>
                 <p>تربة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=59" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3">
-            <a href="shopro.html?product-id=60">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SOIL CONDITIONER.jpg" alt="DELHAS SOIL CONDITIONER">
                 <h3> DELHAS SOIL CONDITIONER</h3>
                 <h3>دلهاس سول كوندشنر </h3>
                 <p>تربة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=60" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients7">
-            <a href="shopro.html?product-id=61">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\TURBA.jpg" alt="DELHAS TURBA">
                 <h3> DELHAS TURBA</h3>
                 <h3>دلهاس توربا </h3>
                 <p>تربة وملوحة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=61" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients7">
-            <a href="shopro.html?product-id=62">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0/TURBA B.jpg" alt="DELHAS TURBA B">
                 <h3> DELHAS TURBA B</h3>
                 <h3>دلهاس توربا بي</h3>
                 <p>تربة وملوحة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=62" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients2,nutrients3,nutrients7">
-            <a href="shopro.html?product-id=63">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\TURBA C.jpg" alt="DELHAS TURBA C">
                 <h3> DELHAS TURBA C</h3>
                 <h3>دلهاس توربا سي</h3>
                 <p>تربة وملوحة وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=63" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=64">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\COMBI GROWTH.jpg" alt="DELHAS COMBI GROWTH">
                 <h3> DELHAS COMBI GROWTH</h3>
                 <h3>دلهاس كومبي جروث </h3>
                 <p>مجموع خضري وتزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=64" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5">
-            <a href="shopro.html?product-id=65">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SEAGIB.jpg" alt="DELHAS SEAGIB">
                 <h3> DELHAS SEAGIB</h3>
                 <h3>دلهاس سيجاب </h3>
                 <p>تهزهير وعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=65" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients3">
-            <a href="shopro.html?product-id=70">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\PGR .jpg" alt="DELHAS PGR">
                 <h3> DELHAS PGR</h3>
                 <h3>دلهاس بي جي ار </h3>
                 <p>تزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=70" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients3">
-            <a href="shopro.html?product-id=66">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\TONIC PGR A.jpg" alt="DELHAS TONIC PGR A">
                 <h3> DELHAS TONIC PGR A</h3>
                 <h3>دلهاس تونيك بي جي ار اي</h3>
                 <p>تزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=66" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients3">
-            <a href="shopro.html?product-id=67">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\TONIC PGR B.jpg" alt="DELHAS TONIC PGR B">
                 <h3> DELHAS TONIC PGR B</h3>
                 <h3>دلهاس تونيك بي جي ار بي</h3>
                 <p>تزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=67" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients3">
-            <a href="shopro.html?product-id=71">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BGD.jpg" alt="DELHAS BGD">
                 <h3> DELHAS BGD</h3>
                 <h3>دلهاس بي جي دي </h3>
                 <p>تزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=71" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients6">
-            <a href="shopro.html?product-id=68">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\GIBBEST POWDER.jpg" alt="DELHAS GIBBEST POWDER">
                 <h3> DELHAS GIBBEST POWDER</h3>
                 <h3>دلهاس جيبيست باودر </h3>
                 <p>تزهير وعقد وتحجيم ثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=68" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients6">
-            <a href="shopro.html?product-id=69">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\GIBBEST LIQUID.jpg" alt="DELHAS GIBBEST LIQUID">
                 <h3> DELHAS GIBBEST LIQUID</h3>
                 <h3>دلهاس جيبيست ليكويد </h3>
                 <p>تزهير وعقد وتحجيم ثمار</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=69" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients5,nutrients3">
-            <a href="shopro.html?product-id=72">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BUTYRIC.jpg" alt="DELHAS BUTYRIC">
                 <h3> DELHAS BUTYRIC</h3>
                 <h3>دلهاس بيتيورك </h3>
                 <p>تزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=72" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3,nutrients4,nutrients5">
-            <a href="shopro.html?product-id=73">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AATC-FOLIC.jpg" alt="DELHAS AATC-FOLIC">
                 <h3> DELHAS AATC-FOLIC</h3>
                 <h3>دلهاس اي اي تي سي -فوليك </h3>
                 <p> مجموع خضري وتزهير وعقد وتجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=73" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3">
-            <a href="shopro.html?product-id=74">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\ROOTS SPECTRO DLB.jpg" alt="DELHAS Roots Spectro">
                 <h3> DELHAS Roots Spectro</h3>
                 <h3>دلهاس روتس سبكترو </h3>
                 <p>تجذير</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=74" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3,nutrients5">
-            <a href="shopro.html?product-id=75">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO ROOTS A.jpg" alt="DELHAS AMINO ROOTS A">
                 <h3> DELHAS AMINO ROOTS A</h3>
                 <h3>دلهاس امينو روتس اي </h3>
                 <p>تجذير وتزهيروعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=75" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients3,nutrients5">
-            <a href="shopro.html?product-id=76">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\AMINO ROOTS B.jpg" alt="DELHAS AMINO ROOTS B">
                 <h3> DELHAS AMINO ROOTS B</h3>
                 <h3>دلهاس امينو روتس بي </h3>
                 <p>تجذير وتزهيروعقد</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=76" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients7">
-            <a href="shopro.html?product-id=77">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SALT CHANGE.jpg" alt="DELHAS SALT CHANGE">
                 <h3> DELHAS SALT CHANGE</h3>
                 <h3>دلهاس سالت تشينج </h3>
                 <p>ملوحة</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=77" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients10,">
-            <a href="shopro.html?product-id=79">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\pH Req.jpg" alt="DELHAS pH Req">
                 <h3> DELHAS pH Req</h3>
                 <h3>دلهاس بي اتش ريك </h3>
                 <p>PHخافض لل </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=79" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients10">
-            <a href="shopro.html?product-id=80">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\pH Org.jpg" alt="DELHAS pH Org">
                 <h3> DELHAS pH Org</h3>
                 <h3>دلهاس بي اتش اورج </h3>
                 <p>PHخافض لل </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=80" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculturenutrients10,">
-            <a href="shopro.html?product-id=81">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\pH NP REGULATOR.jpg" alt="DELHAS PH NP REGULATOR">
                 <h3> DELHAS PH NP REGULATOR</h3>
                 <h3>دلهاس بي اتش ان بي ريجوليتور </h3>
                 <p>PHخافض لل </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=81" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients10">
-            <a href="shopro.html?product-id=82">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\pH MONOKARBAMID.jpg" alt="DELHAS Ph MONOKARBAMID">
                 <h3> DELHAS Ph MONOKARBAMID</h3>
                 <h3>دلهاس مونوكارباميد </h3>
                 <p>PHخافض لل </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=82" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients10">
-            <a href="shopro.html?product-id=83">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\pH NITRIC.jpg" alt="DELHAS pH NITRIC">
                 <h3> DELHAS pH NITRIC</h3>
                 <h3>دلهاس بي اتش نيتريك </h3>
                 <p>PHخافض لل </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=83" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
         <div class="product-item" data-category="agriculture,nutrients11">
-            <a href="shopro.html?product-id=84">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\FILMO.jpg" alt="DELHAS FILMO">
                 <h3> DELHAS FILMO</h3>
                 <h3>دلهاس فيلمو</h3>
                 <p>مواد ناشره ولاصقة</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=84" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients11">
-            <a href="shopro.html?product-id=85">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SILICONE.jpg" alt="DELHAS SILICONE">
                 <h3> DELHAS SILICONE</h3>
                 <h3>دلهاس سيليكون </h3>
                 <p></p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=85" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,NPK,nutrients5,nutrients6,nutrients8">
-            <a href="shopro.html?product-id=88">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SPECIAL K THIOSULPHATE.jpg" alt="DELHAS SILICONE">
                 <h3>DELHAS SPECIAL K THIOSULPHATE</h3>
                 <h3>دلهاس سبيشيال ثيوسولفيت</h3>
                 <p>تحجيم ثمار وقائي وفيسيولوجي</p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=88" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients7">
-            <a href="shopro.html?product-id=88">
+            <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\SALT KALK.jpg" alt="DELHAS SILICONE">
                 <h3>DELHAS SALT KALK</h3>
                 <h3>دلهاس سالت كالك </h3>
                 <p> </p>
                 <p class="price"> </p>
-                <a href="shopro.html?product-id=88" class="btn">المزيد</a>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
 
@@ -1076,27 +1075,20 @@
 
     <!-- JavaScript لتفعيل القائمة المنسدلة -->
     <script>
+
         function toggleMenu() {
             var menu = document.querySelector('.navbar .menu');
             menu.classList.toggle('active');
         }
 
+        const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
+        let currentPage = 1;
+        let currentCategory = 'all'; // الفئة الحالية
     </script>
 
 
     <!-- JavaScript لتصفية المنتجات -->
     <script>
-
-        function filterByCategory(category, categoryName) {
-            // تغيير النص في الزر إلى اسم الفئة المختارة
-            document.getElementById('categoryButton').textContent = categoryName;
-
-            // هنا يتم تحديث الفئة الحالية وتصفيتها
-            currentCategory = category; // تحديث الفئة الحالية
-            currentPage = 1; // إعادة ضبط الصفحة الحالية
-            displayProducts(); // عرض المنتجات بعد التصفية
-        }
-
         // دالة البحث عن المنتجات
         function searchProducts() {
             var input = document.getElementById('search-input').value.toLowerCase();
@@ -1114,28 +1106,26 @@
             }
         }
 
-        function openProduct(imagePath, productId) {
-            // تخزين مسار الصورة في sessionStorage
-            sessionStorage.setItem('productImage', imagePath);
-            sessionStorage.setItem('productId', productId);
-
-            // تخزين الصفحة الحالية والفئة الحالية في sessionStorage
-            sessionStorage.setItem('currentPage', currentPage);
-            sessionStorage.setItem('currentCategory', currentCategory);
-
-            // الانتقال إلى صفحة مميزات المنتج
-            window.location.href = 'shopro.html';
-        }
-
-        const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
-        let currentPage = 1;
-        let currentCategory = 'all'; // الفئة الحالية
-
         // دالة تصفية المنتجات حسب الفئة
         function filterByCategory(category) {
             currentCategory = category; // تحديث الفئة الحالية
             currentPage = 1; // إعادة ضبط الصفحة الحالية
             displayProducts(); // عرض المنتجات بعد التصفية
+        }
+
+        
+
+        function openProduct(imagePath, productId) {
+            // تخزين مسار الصورة ومعرف المنتج
+            localStorage.setItem('productImage', imagePath);
+            localStorage.setItem('productId', productId);
+
+            // تخزين الفئة المختارة والصفحة الحالية في sessionStorage
+            sessionStorage.setItem('currentPage', currentPage);
+            sessionStorage.setItem('currentCategory', currentCategory);
+
+            // الانتقال إلى صفحة المنتج
+            window.location.href = 'shopro.html';  // عدّل هذا المسار حسب اسم ملف المنتج
         }
 
         // دالة عرض المنتجات وتصفيتها حسب الفئة والصفحة
@@ -1213,8 +1203,6 @@
                 window.scrollTo(0, 0); // التمرير إلى أعلى الصفحة عند الانتقال
             }
         }
-
-        // عرض الصفحة الأولى عند تحميل الصفحة
         document.addEventListener('DOMContentLoaded', () => {
             // استرجاع الصفحة والفئة من sessionStorage
             if (sessionStorage.getItem('currentPage')) {
@@ -1228,7 +1216,11 @@
 
             displayProducts();
         });
+
     </script>
+    <script>
+    </script>
+
 </body>
 
 </html>
