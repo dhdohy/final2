@@ -316,9 +316,6 @@ body {
     }
 }
 
-
-
-
 /* جعل التصميم متجاوبًا مع الهواتف الأصغر */
 @media (max-width: 576px) {
     .footer-column {
@@ -384,11 +381,11 @@ footer p {
 
 /* تحسينات على الهواتف الذكية */
 @media (max-width: 768px) {
-    .header .container {
+   .header .container {
         flex-direction: column;
         text-align: center;
-    }
-
+    } 
+   
     .navbar ul {
         display: none;
     }
