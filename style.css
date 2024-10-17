@@ -8,11 +8,11 @@
 
 /* شريط التنبيه العلوي */
 .top-bar {
-    background-color: #2b2321;
-    color: white;
+    background-color: #ff5722;
+    color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -20,7 +20,7 @@
 .header {
     background-color: rgba(51, 51, 51, 0.219);
     padding: 20px 0;
-    border-bottom: 2px solid #302a2a;
+    border-bottom: 1px solid #302a2a;
 }
 
 .container {
@@ -34,9 +34,22 @@
 .logo img {
     width: 200px;
     height: 90px;
+    float: left; /* يحرك العنصر إلى أقصى اليسار */
 }
 
+.nav-menu {
+    display: flex;
+    margin-left: auto; /* يدفع القائمة إلى أقصى اليمين */
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start; /* دفع الشعار إلى أقصى اليسار */
+}
+
+
 .logo h1 {
+    display: flex;
     display: inline-block;
     color: #f5f5f5;
 }
@@ -44,13 +57,13 @@
 /* قائمة التنقل */
 .navbar ul {
     list-style: none;
-    
-    display: flex;
+    display: flex; /* يجعل القائمة في سطر واحد */
+    gap: 20px; /* مسافة بين العناصر */
 }
 
 .navbar ul li {
     margin-left: 15px;
-    background-color: #ff5722;
+    background-color: #000000;
     border-radius: 9px;
 
 
@@ -79,6 +92,22 @@
     cursor: pointer;
     display: none;
     font-size: 20px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: flex-end; /* دفع القائمة إلى أقصى اليمين */
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin-left: 20px; /* مسافة بين عناصر القائمة */
+    color: white;
 }
 
 /* البانر الرئيسي */
@@ -283,8 +312,12 @@ body {
 
     .footer-column {
         margin-bottom: 20px;
+
     }
 }
+
+
+
 
 /* جعل التصميم متجاوبًا مع الهواتف الأصغر */
 @media (max-width: 576px) {
