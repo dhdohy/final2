@@ -68,7 +68,7 @@
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px 150px; /* زيادة حجم الزر */
+    padding: 16px 130px; /* زيادة حجم الزر */
     font-size: 22px;  /* زيادة حجم النص */
     border: none;
     cursor: pointer;
