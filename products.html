@@ -1075,15 +1075,10 @@
 
     <!-- JavaScript لتفعيل القائمة المنسدلة -->
     <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.querySelector('.dropdown-content');
-            if (dropdownMenu.style.display === 'block') {
-                dropdownMenu.style.display = 'none';
-            } else {
-                dropdownMenu.style.display = 'block';
-            }
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar .menu');
+            menu.classList.toggle('active');
         }
-
 
         const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
         let currentPage = 1;
@@ -1131,6 +1126,24 @@
             // الانتقال إلى صفحة المنتج
             window.location.href = 'shopro.html';  // عدّل هذا المسار حسب اسم ملف المنتج
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // استرجاع الصفحة والفئة من sessionStorage
+            if (sessionStorage.getItem('currentPage')) {
+                currentPage = parseInt(sessionStorage.getItem('currentPage'));
+                sessionStorage.removeItem('currentPage'); // حذف القيمة بعد استرجاعها
+            }
+            if (sessionStorage.getItem('currentCategory')) {
+                currentCategory = sessionStorage.getItem('currentCategory');
+                sessionStorage.removeItem('currentCategory'); // حذف القيمة بعد استرجاعها
+            }
+
+            // عرض المنتجات بعد الاسترجاع
+            displayProducts();
+
+            // إعادة تهيئة القوائم المنسدلة وأزرار التنقل
+            initDropdownAndPagination();
+        });
 
         // دالة عرض المنتجات وتصفيتها حسب الفئة والصفحة
         function displayProducts() {
