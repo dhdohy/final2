@@ -1104,6 +1104,9 @@
                 }
             }
         }
+    </script>
+
+    <script>
 
         // دالة تصفية المنتجات حسب الفئة
         function filterByCategory(category) {
@@ -1111,8 +1114,6 @@
             currentPage = 1; // إعادة ضبط الصفحة الحالية
             displayProducts(); // عرض المنتجات بعد التصفية
         }
-
-
 
         function openProduct(imagePath, productId) {
             // تخزين مسار الصورة ومعرف المنتج
@@ -1128,7 +1129,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // استرجاع الصفحة والفئة من sessionStorage
+            // استرجاع الصفحة والفئة من sessionStorage مرة واحدة فقط
             if (sessionStorage.getItem('currentPage')) {
                 currentPage = parseInt(sessionStorage.getItem('currentPage'));
                 sessionStorage.removeItem('currentPage'); // حذف القيمة بعد استرجاعها
@@ -1140,22 +1141,10 @@
 
             // عرض المنتجات بعد الاسترجاع
             displayProducts();
-
-            // إعادة تهيئة القوائم المنسدلة وأزرار التنقل
-            initDropdownAndPagination();
         });
 
         // دالة عرض المنتجات وتصفيتها حسب الفئة والصفحة
         function displayProducts() {
-            // استعادة الصفحة والفئة المخزنة إذا كانت موجودة
-            if (sessionStorage.getItem('currentPage')) {
-                currentPage = parseInt(sessionStorage.getItem('currentPage'));
-            }
-
-            if (sessionStorage.getItem('currentCategory')) {
-                currentCategory = sessionStorage.getItem('currentCategory');
-            }
-
             const products = document.querySelectorAll('.product-item');
             let filteredProducts = [];
 
@@ -1220,20 +1209,7 @@
                 window.scrollTo(0, 0); // التمرير إلى أعلى الصفحة عند الانتقال
             }
         }
-        document.addEventListener('DOMContentLoaded', () => {
-            // استرجاع الصفحة والفئة من sessionStorage
-            if (sessionStorage.getItem('currentPage')) {
-                currentPage = parseInt(sessionStorage.getItem('currentPage'));
-                sessionStorage.removeItem('currentPage'); // حذف القيمة بعد استرجاعها
-            }
-            if (sessionStorage.getItem('currentCategory')) {
-                currentCategory = sessionStorage.getItem('currentCategory');
-                sessionStorage.removeItem('currentCategory'); // حذف القيمة بعد استرجاعها
-            }
 
-
-            displayProducts();
-        });
 
     </script>
     <script>
