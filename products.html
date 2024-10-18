@@ -681,11 +681,11 @@
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
             <a href="shopro.html?product-id=8" onclick="openProduct('0/NPK FERT.jpg', 1)">
                 <img src="0\BIOMIX A LIQUID.jpg" alt="DELHAS BIOMIX A LIQUID">
-            <h3> DELHAS BIOMIX A LIQUID</h3>
-            <h3>دلهاس بيوميكس اي ليكويد </h3>
-            <p>مستخلص طبيعي لتسريع نمو النبات.</p>
-            <p class="price"> </p>
-            <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
+                <h3> DELHAS BIOMIX A LIQUID</h3>
+                <h3>دلهاس بيوميكس اي ليكويد </h3>
+                <p>مستخلص طبيعي لتسريع نمو النبات.</p>
+                <p class="price"> </p>
+                <a href="shopro.html?product-id=1" class="btn" onclick="openProduct('0/NPK FERT.jpg', 1)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="agriculture,nutrients4,nutrients5">
@@ -1075,11 +1075,15 @@
 
     <!-- JavaScript لتفعيل القائمة المنسدلة -->
     <script>
-
-        function toggleMenu() {
-            var menu = document.querySelector('.navbar .menu');
-            menu.classList.toggle('active');
+        function toggleDropdown() {
+            const dropdownMenu = document.querySelector('.dropdown-content');
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
         }
+
 
         const productsPerPage = 5 * 4; // 5 صفوف × 4 منتجات لكل صف
         let currentPage = 1;
@@ -1113,7 +1117,7 @@
             displayProducts(); // عرض المنتجات بعد التصفية
         }
 
-        
+
 
         function openProduct(imagePath, productId) {
             // تخزين مسار الصورة ومعرف المنتج
@@ -1213,6 +1217,7 @@
                 currentCategory = sessionStorage.getItem('currentCategory');
                 sessionStorage.removeItem('currentCategory'); // حذف القيمة بعد استرجاعها
             }
+
 
             displayProducts();
         });
