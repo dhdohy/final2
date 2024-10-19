@@ -64,7 +64,7 @@
 .navbar ul li {
     margin-left: 15px;
     background-color: #000000;
-    border-radius: 9px;
+    border-radius: 15px;
 
 
 }
@@ -73,7 +73,7 @@
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
     font-weight: bold;
     font-size: 17px;
