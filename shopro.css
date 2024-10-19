@@ -70,6 +70,14 @@
     /* إضافة ظل للصورة */
 }
 
+/* كارت التركيبة */
+.composition-card {
+    background-color: white; /* لون الخلفية */
+    border-radius: 10px; /* زوايا مدورة */
+    padding: 15px; /* إضافة حشوة */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    margin: 20px 0; /* مسافة علوية وسفلية */
+}
 .product-composition-card {
     margin: 20px auto;
     text-align: center;
