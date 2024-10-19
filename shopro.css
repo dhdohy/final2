@@ -28,10 +28,8 @@
     font-size: 28px;
     color: #83b978;
     margin-bottom: 15px;
-    margin-top: 10px;
-    /* إضافة مسافة أعلى لاسم المنتج */
-    text-align: right;
-    /* محاذاة النص لليمين */
+    margin-top: 10px;   /* إضافة مسافة أعلى لاسم المنتج */
+    text-align: right;/* محاذاة النص لليمين */
 }
 
 /* وصف المنتج */
@@ -93,17 +91,27 @@
 }
 
 .features-list {
-    list-style-type: none;
+    list-style-type: none; /* إزالة النقاط الافتراضية */
     padding: 0;
     text-align: right; /* لتناسب الكتابة من اليمين لليسار */
 }
 
 .features-list li {
-    font-size: 16px;
+    font-size: 18px; /* زيادة حجم النص */
     color: #555;
-    margin-bottom: 10px;
-    font-family: 'Cairo', sans-serif;
-    /* استخدام الخط Cairo */
+    margin-bottom: 15px; /* زيادة المسافة بين العناصر */
+    font-family: 'Cairo', sans-serif; /* استخدام الخط Cairo */
+    position: relative; /* لتمكين استخدام ::before */
+    padding-right: 20px; /* مساحة للنقطة */
+}
+
+.features-list li::before {
+    content: '•'; /* استخدام نقطة كمحتوى */
+    position: absolute; /* وضع النقطة بشكل مطلق */
+    right: 0; /* وضع النقطة على اليمين */
+    color: #333; /* لون النقطة */
+    font-size: 20px; /* حجم النقطة */
+    margin-right: 5px; /* مساحة بين النقطة والنص */
 }
 
 /* تنسيقات القسم الجديد */
