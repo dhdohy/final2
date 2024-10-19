@@ -1,4 +1,3 @@
-
 /* كارت المنتج */
 .product-card {
     width: 60%;
@@ -28,8 +27,10 @@
     font-size: 28px;
     color: #83b978;
     margin-bottom: 15px;
-    margin-top: 10px;   /* إضافة مسافة أعلى لاسم المنتج */
-    text-align: right;/* محاذاة النص لليمين */
+    margin-top: 10px;
+    /* إضافة مسافة أعلى لاسم المنتج */
+    text-align: right;
+    /* محاذاة النص لليمين */
 }
 
 /* وصف المنتج */
@@ -69,6 +70,49 @@
     /* إضافة ظل للصورة */
 }
 
+.product-composition-card {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.composition-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.composition-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.composition-list li {
+    font-size: 18px;  /* زيادة حجم النص */
+    color: #555;
+    margin-bottom: 15px; /* زيادة المسافة بين العناصر */
+    font-family: 'Cairo', sans-serif; /* استخدام الخط Cairo */
+    position: relative; /* لتمكين استخدام ::before */
+    padding-right: 20px;/* مساحة للنقطة */
+}
+.composition-list li::before {
+    content: '•';  /* استخدام نقطة كمحتوى */
+    position: absolute; /* وضع النقطة بشكل مطلق */
+    right: 0; /* وضع النقطة على اليمين */
+    color: #333;/* لون النقطة */
+    font-size: 20px; /* حجم النقطة */
+    margin-right: 5px; /* مساحة بين النقطة والنص */
+}
+
+
+
 
 
 /* كارت مميزات المنتج */
@@ -97,19 +141,19 @@
 }
 
 .features-list li {
-    font-size: 18px; /* زيادة حجم النص */
+    font-size: 18px;  /* زيادة حجم النص */
     color: #555;
     margin-bottom: 15px; /* زيادة المسافة بين العناصر */
     font-family: 'Cairo', sans-serif; /* استخدام الخط Cairo */
     position: relative; /* لتمكين استخدام ::before */
-    padding-right: 20px; /* مساحة للنقطة */
+    padding-right: 20px;/* مساحة للنقطة */
 }
 
 .features-list li::before {
-    content: '•'; /* استخدام نقطة كمحتوى */
+    content: '•';  /* استخدام نقطة كمحتوى */
     position: absolute; /* وضع النقطة بشكل مطلق */
     right: 0; /* وضع النقطة على اليمين */
-    color: #333; /* لون النقطة */
+    color: #333;/* لون النقطة */
     font-size: 20px; /* حجم النقطة */
     margin-right: 5px; /* مساحة بين النقطة والنص */
 }
@@ -293,7 +337,7 @@
 @media (max-width: 768px) {
     .product-card {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         width: 90%;
     }
 
@@ -321,13 +365,16 @@
         font-size: 14px;
         /* تقليل حجم النص لوصف المنتج */
     }
+
     /* تحسينات على الهواتف */
     @media (max-width: 768px) {
 
-    
+
         .product-grid {
-            grid-template-columns: repeat(2, 1fr); /* عرض عمودين للمنتجات */
-            gap: 1px; /* مسافة بين الكروت */
+            grid-template-columns: repeat(2, 1fr);
+            /* عرض عمودين للمنتجات */
+            gap: 1px;
+            /* مسافة بين الكروت */
         }
 
         /* تعديل حجم كروت المنتجات لتناسب العرض في عمودين */
@@ -350,6 +397,6 @@
             padding: 8px 16px;
         }
 
-  
+
     }
 }
