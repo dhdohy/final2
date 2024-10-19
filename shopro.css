@@ -399,4 +399,8 @@
 
 
     }
+    .composition-card {
+        background-color: white; /* ضبط الخلفية على الأجهزة الصغيرة */
+        padding: 10px; /* تقليل الحشوة */
+    }
 }
