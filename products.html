@@ -81,49 +81,49 @@
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients3', 'تجذير')">تجذير</a>
                 </div>
-                
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients4', 'المجموع الخضري')">المجموع الخضري</a>
                 </div>
 
-                   
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients5', 'للتزهير و العقد')">للتزهير و العقد</a>
                 </div>
 
-      
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients6', 'خاصة بالثمار')">خاصة بالثمار</a>
                 </div>
 
-                      
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients7', 'خاصة بالملوحة')">خاصة بالملوحة</a>
                 </div>
-                      
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients8', 'وقائي وفيسيولوجي')">وقائي وفيسيولوجي</a>
                 </div>
-                      
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients10', 'PH خافض لل')">PH خافض لل</a>
                 </div>
 
-                       
+
                 <div class="dropdown-submenu">
                     <a href="#" onclick="filterByCategory('nutrients11', 'مواد لاصقة وناشرة')">مواد لاصقة وناشرة</a>
                 </div>
 
-                       
+
                 <div class="dropdown-submenu">
                 </div>
 
-                        
+
                 <div class="dropdown-submenu">
-         
+
                 </div>
 
-              
+
             </div>
         </div>
     </div>
@@ -195,7 +195,7 @@
                 <p class="price"></p>
                 <a href="shopro.html?product-id=6" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 6)">المزيد</a>
         </div>
-                          <!-- 7777 -->
+        <!-- 7777 -->
         <div class="product-item" data-category="npk,agriculture">
             <a href="shopro.html?product-id=7" onclick="openProduct('0/NPK FERT.jpg', 7)">
                 <img src="0\7-7-7.jpg" alt="DELHAS PLUS NPK">
@@ -233,7 +233,8 @@
                 <h3>دلهاس سبيشيال ماغنسيوم</h3>
                 <p>المجموع الخضري وتربة</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=10" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 10)">المزيد</a>
+                <a href="shopro.html?product-id=10" class="btn"
+                    onclick="openProduct('0/SOLUTION NPK.jpg', 10)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="nutrients2,nutrients4">
@@ -243,7 +244,8 @@
                 <h3>دلهاس سبيشيال كالسيوم </h3>
                 <p>خاص بالتربة ومجموع خضري</p>
                 <p class="price"></p>
-                <a href="shopro.html?product-id=11" class="btn" onclick="openProduct('0/SOLUTION NPK.jpg', 11)">المزيد</a>
+                <a href="shopro.html?product-id=11" class="btn"
+                    onclick="openProduct('0/SOLUTION NPK.jpg', 11)">المزيد</a>
         </div>
 
         <div class="product-item" data-category="npk,nutrients2,nutrients6">
@@ -1141,7 +1143,27 @@
             currentCategory = category; // تحديث الفئة الحالية
             currentPage = 1; // إعادة ضبط الصفحة الحالية
             displayProducts(); // عرض المنتجات بعد التصفية
+
+
+            // إخفاء القائمة المنسدلة بعد اختيار الفئة
+            const dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display = 'none'; // إخفاء القائمة فقط
         }
+
+        // دالة لفتح/إغلاق القائمة عند الضغط على الزر
+        function toggleDropdown() {
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            // التحقق مما إذا كانت القائمة مخفية أو مرئية
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none'; // إخفاء القائمة إذا كانت مرئية
+            } else {
+                dropdownContent.style.display = 'block'; // إظهار القائمة إذا كانت مخفية
+            }
+        }
+
+        // ربط الزر بفتح وإغلاق القائمة
+        document.getElementById('categoryButton').addEventListener('click', toggleDropdown);
 
         function openProduct(imagePath, productId) {
             // تخزين مسار الصورة ومعرف المنتج
